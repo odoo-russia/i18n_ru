@@ -1,0 +1,43 @@
+# Spanish translation for openobject-addons
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the openobject-addons package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openobject-addons\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-08-14 13:09+0000\n"
+"PO-Revision-Date: 2014-10-22 23:14+0400\n"
+"Last-Translator: \n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"web_kanban_gauge/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Launchpad-Export-Date: 2014-08-15 07:58+0000\n"
+
+#. module: web_kanban_gauge
+#. openerp-web
+#: code:addons/web_kanban_gauge/static/src/js/kanban_gauge.js:151
+#, python-format
+msgid "Click to change value"
+msgstr "Нажмите для изменения значения"
+
+#. module: web_kanban_gauge
+#. openerp-web
+#: code:addons/web_kanban_gauge/static/src/js/kanban_gauge.js:113
+#, python-format
+msgid "Only Integer Value should be valid."
+msgstr "Только целое значение должно быть действительным."
+
+#. module: web_kanban_gauge
+#. openerp-web
+#: code:addons/web_kanban_gauge/static/src/js/kanban_gauge.js:113
+#, python-format
+msgid "Wrong value entered!"
+msgstr "Введена неправильная величина!"
