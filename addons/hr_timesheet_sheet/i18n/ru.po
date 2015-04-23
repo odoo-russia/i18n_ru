@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-01 20:51+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 02:56+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/hr_timesheet_sheet/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"hr_timesheet_sheet/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:17+0000\n"
 
 #. module: hr_timesheet_sheet
@@ -26,37 +26,37 @@ msgstr ""
 msgid ""
 " * The 'Draft' status is used when a user is encoding a new and unconfirmed "
 "timesheet.                 \n"
-"* The 'Confirmed' status is used for to confirm the timesheet by user.       "
-"          \n"
+"* The 'Confirmed' status is used for to confirm the timesheet by "
+"user.                 \n"
 "* The 'Done' status is used when users timesheet is accepted by his/her "
 "senior."
 msgstr ""
 " * Статус 'Черновик'  используется, когда пользователь кодирует новый и "
 "неподтвержденный табель. ↵ \n"
-"* Статус 'Подтверждено' используется для подтверждения табеля пользователем.↵"
-" \n"
+"* Статус 'Подтверждено' используется для подтверждения табеля пользователем."
+"↵ \n"
 "* Статус \"Готов\" используется, когда табель пользователей принимается его/"
 "ее руководителем."
 
 #. module: hr_timesheet_sheet
 #: field:hr.timesheet.report,nbr:0
-msgid "#Nbr"
-msgstr "№"
+msgid "# Nbr Timesheet"
+msgstr ""
 
 #. module: hr_timesheet_sheet
 #: field:hr.timesheet.report,total_attendance:0
-msgid "#Total Attendance"
+msgid "# Total Attendance"
 msgstr "Общая посещаемость"
 
 #. module: hr_timesheet_sheet
 #: field:hr.timesheet.report,total_diff:0
-msgid "#Total Diff"
-msgstr "#Итого разница"
+msgid "# Total Diff"
+msgstr "# Итого разница"
 
 #. module: hr_timesheet_sheet
 #: field:hr.timesheet.report,total_timesheet:0
-msgid "#Total Timesheet"
-msgstr "#Итого расписание"
+msgid "# Total Timesheet"
+msgstr "# Итого расписание"
 
 #. module: hr_timesheet_sheet
 #: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_form
@@ -77,10 +77,10 @@ msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
 "                Подтвердить новый табель.\n"
 "              </p><p>\n"
-"               Вы должны заполнять табель каждый день и подтверждать в конце "
-"\n"
-"                 недели. После того, как табель подтвержден, он должен быть "
-"\n"
+"               Вы должны заполнять табель каждый день и подтверждать в "
+"конце \n"
+"                 недели. После того, как табель подтвержден, он должен "
+"быть \n"
 "                 утвержден менеджером.\n"
 "              </p><p>\n"
 "               Табели также могут быть включены в счет для клиентов, в "
@@ -310,13 +310,18 @@ msgstr ""
 #: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:85
 #: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:87
 #: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:89
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:378
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:491
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:519
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:381
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:494
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:522
 #: code:addons/hr_timesheet_sheet/wizard/hr_timesheet_current.py:38
 #, python-format
 msgid "Error!"
 msgstr "Ошибка!"
+
+#. module: hr_timesheet_sheet
+#: model:ir.filters,name:hr_timesheet_sheet.filter_hr_timesheet_report_external_timesheets
+msgid "External Timesheet"
+msgstr ""
 
 #. module: hr_timesheet_sheet
 #: field:hr_timesheet_sheet.sheet,message_follower_ids:0
@@ -343,8 +348,7 @@ msgid "Hours"
 msgstr "Часы"
 
 #. module: hr_timesheet_sheet
-#: field:hr.timesheet.current.open,id:0
-#: field:hr_timesheet_sheet.sheet,id:0
+#: field:hr.timesheet.current.open,id:0 field:hr_timesheet_sheet.sheet,id:0
 #: field:hr_timesheet_sheet.sheet.account,id:0
 #: field:hr_timesheet_sheet.sheet.day,id:0
 msgid "ID"
@@ -403,8 +407,13 @@ msgstr ""
 "сотрудника к продукту."
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:253
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:255
+#: model:ir.filters,name:hr_timesheet_sheet.filter_hr_timesheet_report_internal_timesheets
+msgid "Internal Timesheet"
+msgstr ""
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:256
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:258
 #, python-format
 msgid "Invalid Action!"
 msgstr "Неверное действие!"
@@ -473,10 +482,10 @@ msgstr "Моё расписание"
 #: model:ir.actions.act_window,help:hr_timesheet_sheet.action_hr_timesheet_current_open
 msgid ""
 "My Timesheet opens your timesheet so that you can book your activities into "
-"the system. From the same form, you can register your attendances (Sign "
-"In/Out) and describe the working hours made on the different projects. At "
-"the end of the period defined in the company, the timesheet is confirmed by "
-"the user and can be validated by his manager. If required, as defined on the "
+"the system. From the same form, you can register your attendances (Sign In/"
+"Out) and describe the working hours made on the different projects. At the "
+"end of the period defined in the company, the timesheet is confirmed by the "
+"user and can be validated by his manager. If required, as defined on the "
 "project, you can generate the invoices based on the timesheet."
 msgstr ""
 "\"Моё расписание\" открывает таблицу-расписание, в котором можно планировать "
@@ -527,11 +536,10 @@ msgstr "Периодичность, с которой вы проверяете 
 #: code:addons/hr_timesheet_sheet/wizard/hr_timesheet_current.py:38
 #, python-format
 msgid "Please create an employee and associate it with this user."
-msgstr ""
-"Пожалуйста, создайте сотрудника и свяжите его с данным пользователем."
+msgstr "Пожалуйста, создайте сотрудника и свяжите его с данным пользователем."
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:128
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:131
 #, python-format
 msgid ""
 "Please verify that the total difference of the sheet is lower than %.2f."
@@ -568,8 +576,7 @@ msgid "Set to Draft"
 msgstr "Установить в Черновик"
 
 #. module: hr_timesheet_sheet
-#: field:hr.analytic.timesheet,sheet_id:0
-#: field:hr.attendance,sheet_id:0
+#: field:hr.analytic.timesheet,sheet_id:0 field:hr.attendance,sheet_id:0
 #: field:hr_timesheet_sheet.sheet.account,sheet_id:0
 #: field:hr_timesheet_sheet.sheet.day,sheet_id:0
 msgid "Sheet"
@@ -587,8 +594,7 @@ msgstr "Выход"
 
 #. module: hr_timesheet_sheet
 #: view:hr.timesheet.report:hr_timesheet_sheet.view_timesheet_report_search
-#: field:hr.timesheet.report,state:0
-#: field:hr_timesheet_sheet.sheet,state:0
+#: field:hr.timesheet.report,state:0 field:hr_timesheet_sheet.sheet,state:0
 msgid "Status"
 msgstr "Статус"
 
@@ -754,8 +760,8 @@ msgid "User"
 msgstr "Пользователь"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:493
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:512
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:496
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:515
 #, python-format
 msgid "User Error!"
 msgstr "Ошибка пользователя!"
@@ -777,7 +783,7 @@ msgid "Warning !"
 msgstr "Внимание !"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:128
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:131
 #, python-format
 msgid "Warning!"
 msgstr "Внимание!"
@@ -799,20 +805,21 @@ msgid "Week"
 msgstr "Неделя"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:245
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:248
 #, python-format
 msgid "Week "
 msgstr "Неделя "
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:493
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:496
 #, python-format
 msgid ""
 "You can not enter an attendance date outside the current timesheet dates."
-msgstr "Вы не можете ввести дату посещаемости за пределами текущих дат табелей."
+msgstr ""
+"Вы не можете ввести дату посещаемости за пределами текущих дат табелей."
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:491
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:494
 #, python-format
 msgid ""
 "You can not enter an attendance in a submitted timesheet. Ask your manager "
@@ -822,13 +829,13 @@ msgstr ""
 "менеджеру, чтобы сбросить его, прежде чем добавлять посещаемость."
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:255
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:258
 #, python-format
 msgid "You cannot delete a timesheet which have attendance entries."
 msgstr "Вы не можете удалить табель с посещаемостью."
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:253
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:256
 #, python-format
 msgid "You cannot delete a timesheet which is already confirmed."
 msgstr "Вы не можете удалить табель, который уже подтвержден."
@@ -840,7 +847,7 @@ msgid "You cannot duplicate a timesheet."
 msgstr "Вы не можете дублировать табель."
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:512
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:515
 #, python-format
 msgid ""
 "You cannot enter an attendance date outside the current timesheet dates."
@@ -872,13 +879,13 @@ msgid "You cannot modify an entry in a Confirmed/Done timesheet !"
 msgstr "Вы не можете изменить запись в подтвержденном/закрытом табеле!"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:519
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:522
 #, python-format
 msgid "You cannot modify an entry in a confirmed timesheet"
 msgstr "Вы не можете изменить запись в утвержденном табеле"
 
 #. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:378
+#: code:addons/hr_timesheet_sheet/hr_timesheet_sheet.py:381
 #, python-format
 msgid "You cannot modify an entry in a confirmed timesheet."
 msgstr "Вы не можете изменить запись в утвержденном табеле."
@@ -893,3 +900,16 @@ msgid ""
 msgstr ""
 "Вы сможете зарегистрировать свои рабочие часы и \n"
 "                         деятельность."
+
+#. module: hr_timesheet_sheet
+#: view:hr.timesheet.current.open:hr_timesheet_sheet.view_hr_timesheet_current_open
+msgid "or"
+msgstr ""
+
+#. module: hr_timesheet_sheet
+#: view:hr_timesheet_sheet.sheet:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "to"
+msgstr ""
+
+#~ msgid "#Nbr"
+#~ msgstr "№"

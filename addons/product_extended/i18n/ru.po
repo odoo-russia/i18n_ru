@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-22 23:54+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 05:29+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "product_extended/ru/>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-19 07:05+0000\n"
 
 #. module: product_extended
-#: code:addons/product_extended/wizard/wizard_price.py:43
-#: code:addons/product_extended/wizard/wizard_price.py:52
+#: code:addons/product_extended/wizard/wizard_price.py:44
+#: code:addons/product_extended/wizard/wizard_price.py:56
 #, python-format
 msgid "Active ID is not set in Context."
 msgstr "Активный ID не установлен в контексте."
@@ -99,12 +99,12 @@ msgid "Last Updated on"
 msgstr "Последний раз обновлено"
 
 #. module: product_extended
-#: model:ir.model,name:product_extended.model_product_product
-msgid "Product"
-msgstr "Товар"
+#: model:ir.model,name:product_extended.model_product_template
+msgid "Product Template"
+msgstr ""
 
 #. module: product_extended
-#: view:product.product:product_extended.product_product_ext_form_view2
+#: view:product.template:product_extended.product_product_ext_form_view2
 msgid "Recompute price from BoM"
 msgstr "Пересчитать цену из спецификации"
 
@@ -117,3 +117,29 @@ msgstr "Установить цену в спецификации"
 #: field:mrp.bom,standard_price:0
 msgid "Standard Price"
 msgstr "Стандартная цена"
+
+#. module: product_extended
+#: view:wizard.price:product_extended.view_compute_price_wizard
+msgid ""
+"The price is computed from the bill of material lines which are not variant "
+"specific"
+msgstr ""
+
+#. module: product_extended
+#: code:addons/product_extended/wizard/wizard_price.py:54
+#, python-format
+msgid ""
+"This wizard is build for product templates, while you are currently running "
+"it from a product variant."
+msgstr ""
+
+#. module: product_extended
+#: code:addons/product_extended/wizard/wizard_price.py:54
+#, python-format
+msgid "Wrong model!"
+msgstr ""
+
+#. module: product_extended
+#: view:wizard.price:product_extended.view_compute_price_wizard
+msgid "or"
+msgstr ""

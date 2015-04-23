@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-22 23:05+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 06:33+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "website_event_sale/ru/>\n"
@@ -18,11 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-19 07:05+0000\n"
 
 #. module: website_event_sale
-#: code:addons/website_event_sale/models/sale_order.py:38
+#: view:website:website_event.event_description_full
+msgid "&nbsp;"
+msgstr ""
+
+#. module: website_event_sale
+#: code:addons/website_event_sale/models/sale_order.py:39
 #, python-format
 msgid "Error!"
 msgstr "Ошибка!"
@@ -79,13 +84,13 @@ msgid "Sold Out"
 msgstr "Распродано"
 
 #. module: website_event_sale
-#: code:addons/website_event_sale/controllers/main.py:55
+#: code:addons/website_event_sale/controllers/main.py:66
 #, python-format
 msgid "Subscription"
 msgstr "Подписка"
 
 #. module: website_event_sale
-#: code:addons/website_event_sale/models/sale_order.py:38
+#: code:addons/website_event_sale/models/sale_order.py:39
 #, python-format
 msgid "The ticket doesn't match with this product."
 msgstr "Билет не подходит к этому товаром."
@@ -101,15 +106,13 @@ msgid "Website"
 msgstr "Вебсайт"
 
 #. module: website_event_sale
-#: view:website:website_sale.cart
-msgid ""
-"abs(line.product_id.lst_price - line.price_unit) > 0.2 and not line."
-"product_id.event_ok"
-msgstr ""
-"abs(line.product_id.lst_price - line.price_unit) > 0.2 and not line."
-"product_id.event_ok"
-
-#. module: website_event_sale
 #: view:website:website_event.event_description_full
 msgid "left"
 msgstr "слева"
+
+#~ msgid ""
+#~ "abs(line.product_id.lst_price - line.price_unit) > 0.2 and not line."
+#~ "product_id.event_ok"
+#~ msgstr ""
+#~ "abs(line.product_id.lst_price - line.price_unit) > 0.2 and not line."
+#~ "product_id.event_ok"

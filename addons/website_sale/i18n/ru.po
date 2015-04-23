@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-22 22:54+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:09+0000\n"
+"PO-Revision-Date: 2015-04-24 06:44+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "website_sale/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-26 08:42+0000\n"
 
 #. module: website_sale
@@ -479,7 +479,7 @@ msgstr "Название (Отправка)"
 
 #. module: website_sale
 #. openerp-web
-#: code:addons/website_sale/controllers/main.py:805
+#: code:addons/website_sale/controllers/main.py:845
 #: code:addons/website_sale/static/src/js/website_sale.editor.js:11
 #: view:website:website.layout
 #, python-format
@@ -540,7 +540,9 @@ msgid "Parent Category"
 msgstr "Родительская категория"
 
 #. module: website_sale
+#: code:addons/website_sale/controllers/main.py:654
 #: view:website:website_sale.payment
+#, python-format
 msgid "Pay Now"
 msgstr "Заплатить сейчас"
 
@@ -949,14 +951,14 @@ msgid "Thank you for your order."
 msgstr "Спасибо вам за заказ."
 
 #. module: website_sale
-#: code:addons/website_sale/controllers/main.py:716
+#: code:addons/website_sale/controllers/main.py:752
 #, python-format
 msgid "The payment seems to have been canceled."
 msgstr "Кажется, платеж был отменен."
 
 #. module: website_sale
-#: code:addons/website_sale/controllers/main.py:692
-#: code:addons/website_sale/controllers/main.py:704
+#: code:addons/website_sale/controllers/main.py:728
+#: code:addons/website_sale/controllers/main.py:740
 #, python-format
 msgid "There seems to be an error with your request."
 msgstr "Кажется, что с вашим запросом возникла ошибка."
@@ -964,7 +966,7 @@ msgstr "Кажется, что с вашим запросом возникла �
 #. module: website_sale
 #: help:product.public.category,image:0
 msgid ""
-"This field holds the image used as image for the cateogry, limited to "
+"This field holds the image used as image for the category, limited to "
 "1024x1024px."
 msgstr ""
 "Это поле содержит изображение, используемое в качестве изображения для "
@@ -1106,14 +1108,14 @@ msgid "Your cart is empty!"
 msgstr "Ваша корзина пуста!"
 
 #. module: website_sale
-#: code:addons/website_sale/controllers/main.py:714
+#: code:addons/website_sale/controllers/main.py:750
 #, python-format
 msgid "Your payment has been received."
 msgstr "Ваш платеж был получен."
 
 #. module: website_sale
-#: code:addons/website_sale/controllers/main.py:718
-#: code:addons/website_sale/controllers/main.py:722
+#: code:addons/website_sale/controllers/main.py:754
+#: code:addons/website_sale/controllers/main.py:758
 #, python-format
 msgid "Your transaction is waiting confirmation."
 msgstr "Ваша транзакция ожидает подтверждения."
@@ -1152,6 +1154,26 @@ msgstr "комментарий"
 #: view:website:website_sale.product
 msgid "comments"
 msgstr "комментарии"
+
+#. module: website_sale
+#: view:website:website_sale.product
+msgid "on"
+msgstr ""
+
+#. module: website_sale
+#: view:website:website_sale.checkout
+msgid "or"
+msgstr ""
+
+#. module: website_sale
+#: view:website:website_sale.products
+msgid "pagination form-inline col-md-3"
+msgstr ""
+
+#. module: website_sale
+#: view:website:website_sale.product
+msgid "pull-right"
+msgstr ""
 
 #. module: website_sale
 #: view:website:website_sale.checkout

@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-22 23:20+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 06:22+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "stock_picking_wave/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-20 06:28+0000\n"
 
 #. module: stock_picking_wave
@@ -115,7 +115,7 @@ msgid "Dry"
 msgstr ""
 
 #. module: stock_picking_wave
-#: code:addons/stock_picking_wave/stock_picking_wave.py:39
+#: code:addons/stock_picking_wave/stock_picking_wave.py:40
 #, python-format
 msgid "Error!"
 msgstr "Ошибка!"
@@ -184,7 +184,7 @@ msgid "Name of the picking wave"
 msgstr ""
 
 #. module: stock_picking_wave
-#: code:addons/stock_picking_wave/stock_picking_wave.py:39
+#: code:addons/stock_picking_wave/stock_picking_wave.py:40
 #, python-format
 msgid "Nothing to print."
 msgstr ""
@@ -200,6 +200,7 @@ msgid "Picking List"
 msgstr "Комплектовочный лист"
 
 #. module: stock_picking_wave
+#: model:ir.model,name:stock_picking_wave.model_stock_picking_wave
 #: field:stock.picking,wave_id:0 field:stock.picking.to.wave,wave_id:0
 #: view:stock.picking.wave:stock_picking_wave.view_picking_wave_filter
 msgid "Picking Wave"
@@ -258,7 +259,7 @@ msgid "Select a wave"
 msgstr ""
 
 #. module: stock_picking_wave
-#: code:addons/stock_picking_wave/stock_picking_wave.py:56
+#: code:addons/stock_picking_wave/stock_picking_wave.py:57
 #, python-format
 msgid ""
 "Some pickings are still waiting for goods. Please check or force their "
@@ -293,7 +294,7 @@ msgid "User"
 msgstr "Пользователь"
 
 #. module: stock_picking_wave
-#: code:addons/stock_picking_wave/stock_picking_wave.py:56
+#: code:addons/stock_picking_wave/stock_picking_wave.py:57
 #, python-format
 msgid "Warning"
 msgstr "Внимание"
@@ -301,4 +302,9 @@ msgstr "Внимание"
 #. module: stock_picking_wave
 #: view:stock.picking:stock_picking_wave.view_stock_picking_wave_search_inherit
 msgid "Wave"
+msgstr ""
+
+#. module: stock_picking_wave
+#: view:stock.picking.to.wave:stock_picking_wave.picking_to_wave_form
+msgid "or"
 msgstr ""
