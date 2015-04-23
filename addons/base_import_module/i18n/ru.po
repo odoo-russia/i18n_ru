@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-23 00:10+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 00:02+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "base_import_module/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 06:57+0000\n"
 
 #. module: base_import_module
@@ -42,21 +42,21 @@ msgid "Created on"
 msgstr "Создан"
 
 #. module: base_import_module
-#: code:addons/base_import_module/models/ir_module.py:29
-#: code:addons/base_import_module/models/ir_module.py:80
-#: code:addons/base_import_module/models/ir_module.py:88
+#: code:addons/base_import_module/models/ir_module.py:30
+#: code:addons/base_import_module/models/ir_module.py:82
+#: code:addons/base_import_module/models/ir_module.py:91
 #, python-format
 msgid "Error !"
 msgstr "Ошибка !"
 
 #. module: base_import_module
-#: code:addons/base_import_module/models/ir_module.py:88
+#: code:addons/base_import_module/models/ir_module.py:90
 #, python-format
 msgid "File '%s' exceed maximum allowed file size"
 msgstr "Файл '%s' превышает максимально допустимый размер файла"
 
 #. module: base_import_module
-#: code:addons/base_import_module/models/ir_module.py:80
+#: code:addons/base_import_module/models/ir_module.py:82
 #, python-format
 msgid "File is not a zip file!"
 msgstr "Файл не является zip файлом!"
@@ -134,8 +134,8 @@ msgstr "Статус"
 #. module: base_import_module
 #: code:addons/base_import_module/models/ir_module.py:29
 #, python-format
-msgid "Unmet module dependencies: %s, "
-msgstr "Неудовлетворенные зависимости модулей:%s, "
+msgid "Unmet module dependencies: %s"
+msgstr "Неудовлетворенные зависимости модулей:%s"
 
 #. module: base_import_module
 #: selection:base.import.module,state:0
@@ -146,3 +146,8 @@ msgstr "сделано"
 #: selection:base.import.module,state:0
 msgid "init"
 msgstr "инициализация"
+
+#. module: base_import_module
+#: view:base.import.module:base_import_module.view_base_module_import
+msgid "or"
+msgstr "или"

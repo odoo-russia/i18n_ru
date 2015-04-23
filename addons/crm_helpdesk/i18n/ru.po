@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-20 22:29+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 00:34+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/crm_helpdesk/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"crm_helpdesk/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:03+0000\n"
 
 #. module: crm_helpdesk
@@ -28,8 +28,8 @@ msgstr "# Адреса электронной почты"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk.report,nbr:0
-msgid "# of Cases"
-msgstr "кол-во вопросов"
+msgid "# of Requests"
+msgstr "кол-во запросов"
 
 #. module: crm_helpdesk
 #: model:ir.actions.act_window,help:crm_helpdesk.crm_case_helpdesk_act111
@@ -78,8 +78,7 @@ msgid "Assigned to Me or My Sales Team(s)"
 msgstr "Присвоенный мне или моей группе (ам) сбыта"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,state:0
-#: selection:crm.helpdesk.report,state:0
+#: selection:crm.helpdesk,state:0 selection:crm.helpdesk.report,state:0
 msgid "Cancelled"
 msgstr "Отменено"
 
@@ -94,15 +93,12 @@ msgid "Categorization"
 msgstr "Категоризация"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,categ_id:0
-#: field:crm.helpdesk.report,categ_id:0
+#: field:crm.helpdesk,categ_id:0 field:crm.helpdesk.report,categ_id:0
 msgid "Category"
 msgstr "Категория"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,channel_id:0
-#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
-#: field:crm.helpdesk.report,channel_id:0
+#: field:crm.helpdesk,channel_id:0 field:crm.helpdesk.report,channel_id:0
 msgid "Channel"
 msgstr "Канал"
 
@@ -113,8 +109,7 @@ msgid "Close Date"
 msgstr "Дата закрытия"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,date_closed:0
-#: selection:crm.helpdesk,state:0
+#: field:crm.helpdesk,date_closed:0 selection:crm.helpdesk,state:0
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
 #: selection:crm.helpdesk.report,state:0
 msgid "Closed"
@@ -152,16 +147,13 @@ msgid "Created by"
 msgstr "Создано"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,create_date:0
-#: field:crm.helpdesk.report,create_date:0
+#: field:crm.helpdesk,create_date:0 field:crm.helpdesk.report,create_date:0
 msgid "Creation Date"
 msgstr "Дата создания"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.crm_case_tree_view_helpdesk
-#: field:crm.helpdesk,date:0
-#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
-#: field:crm.helpdesk.report,date:0
+#: field:crm.helpdesk,date:0 field:crm.helpdesk.report,date:0
 msgid "Date"
 msgstr "Дата"
 
@@ -323,8 +315,7 @@ msgstr ""
 "я управляю"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,priority:0
-#: selection:crm.helpdesk.report,priority:0
+#: selection:crm.helpdesk,priority:0 selection:crm.helpdesk.report,priority:0
 msgid "High"
 msgstr "Высокий"
 
@@ -343,8 +334,7 @@ msgstr ""
 "непосредственно в HTML формате для того, чтобы вставить в виды kanban."
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,id:0
-#: field:crm.helpdesk.report,id:0
+#: field:crm.helpdesk,id:0 field:crm.helpdesk.report,id:0
 msgid "ID"
 msgstr "ID"
 
@@ -379,8 +369,7 @@ msgid "Last Updated by"
 msgstr "Последний раз обновлено"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,priority:0
-#: selection:crm.helpdesk.report,priority:0
+#: selection:crm.helpdesk,priority:0 selection:crm.helpdesk.report,priority:0
 msgid "Low"
 msgstr "Низкий"
 
@@ -406,6 +395,11 @@ msgstr "Прочее"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
+msgid "Month"
+msgstr ""
+
+#. module: crm_helpdesk
+#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
 msgid "Month of helpdesk requests"
 msgstr "Месяц запросов техподдержки"
 
@@ -423,11 +417,6 @@ msgstr "Моя компания"
 #: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
 msgid "My Sales Team(s)"
 msgstr "Мои отделы продаж"
-
-#. module: crm_helpdesk
-#: view:crm.helpdesk.report:crm_helpdesk.view_report_crm_helpdesk_filter
-msgid "My company"
-msgstr "Моя компания"
 
 #. module: crm_helpdesk
 #: field:crm.helpdesk,name:0
@@ -458,8 +447,7 @@ msgid "No Subject"
 msgstr "Предмет отсутствует"
 
 #. module: crm_helpdesk
-#: selection:crm.helpdesk,priority:0
-#: selection:crm.helpdesk.report,priority:0
+#: selection:crm.helpdesk,priority:0 selection:crm.helpdesk.report,priority:0
 msgid "Normal"
 msgstr "Обычный"
 
@@ -496,14 +484,12 @@ msgstr "Партнер"
 
 #. module: crm_helpdesk
 #: view:crm.helpdesk:crm_helpdesk.view_crm_case_helpdesk_filter
-#: selection:crm.helpdesk,state:0
-#: selection:crm.helpdesk.report,state:0
+#: selection:crm.helpdesk,state:0 selection:crm.helpdesk.report,state:0
 msgid "Pending"
 msgstr "В ожидании"
 
 #. module: crm_helpdesk
-#: field:crm.helpdesk,planned_cost:0
-#: field:crm.helpdesk.report,planned_cost:0
+#: field:crm.helpdesk,planned_cost:0 field:crm.helpdesk.report,planned_cost:0
 msgid "Planned Costs"
 msgstr "Планируемые затраты"
 
@@ -620,12 +606,12 @@ msgstr "Резюме"
 #. module: crm_helpdesk
 #: help:crm.helpdesk,state:0
 msgid ""
-"The status is set to 'Draft', when a case is created.                        "
-"          \n"
-"If the case is in progress the status is set to 'Open'.                      "
-"            \n"
-"When the case is over, the status is set to 'Done'.                          "
-"        \n"
+"The status is set to 'Draft', when a case is "
+"created.                                  \n"
+"If the case is in progress the status is set to "
+"'Open'.                                  \n"
+"When the case is over, the status is set to "
+"'Done'.                                  \n"
 "If the case needs to be reviewed then the status is set to 'Pending'."
 msgstr ""
 "Статус \"Черновик\" устанавливается, когда дело создано. ↵ \n"
@@ -683,3 +669,6 @@ msgid ""
 msgstr ""
 "Вы не можете повысить свой уровень, вы уже на высшем уровне в вашей "
 "категории команд продаж."
+
+#~ msgid "My company"
+#~ msgstr "Моя компания"

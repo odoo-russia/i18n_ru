@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-01 02:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 00:45+0700\n"
 "Last-Translator: user2 <user2@starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/decimal_precision/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"decimal_precision/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:04+0000\n"
 
 #. module: decimal_precision
@@ -51,8 +51,7 @@ msgid "Digits"
 msgstr "Знаков"
 
 #. module: decimal_precision
-#: field:decimal.precision,id:0
-#: field:decimal.precision.test,id:0
+#: field:decimal.precision,id:0 field:decimal.precision.test,id:0
 msgid "ID"
 msgstr "ID"
 
@@ -71,8 +70,7 @@ msgstr "Последний раз обновлено"
 #. module: decimal_precision
 #: sql_constraint:decimal.precision:0
 msgid "Only one value can be defined for each given usage!"
-msgstr ""
-"Только одно значение может быть определено для каждого использования!"
+msgstr "Только одно значение может быть определено для каждого использования!"
 
 #. module: decimal_precision
 #: field:decimal.precision,name:0
@@ -80,8 +78,7 @@ msgid "Usage"
 msgstr "Использование"
 
 #. module: decimal_precision
-#: field:decimal.precision.test,float:0
-#: field:decimal.precision.test,float_2:0
+#: field:decimal.precision.test,float:0 field:decimal.precision.test,float_2:0
 #: field:decimal.precision.test,float_4:0
 msgid "unknown"
 msgstr "неизвестно"
