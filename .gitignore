@@ -2,7 +2,6 @@
 *.pyc
 openerp-server
 openerp-web
-openerp
 projectFilesBackup
 *~
 *.jasper
