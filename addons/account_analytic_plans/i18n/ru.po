@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-01 23:01+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-23 21:53+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/account_analytic_plans/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"account_analytic_plans/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 06:48+0000\n"
 
 #. module: account_analytic_plans
@@ -161,8 +161,7 @@ msgstr "Строки плана аналитики"
 #. module: account_analytic_plans
 #: view:account.analytic.plan:account_analytic_plans.account_analytic_plan_search
 #: view:account.analytic.plan:account_analytic_plans.account_analytic_plan_tree
-#: field:account.analytic.plan,plan_ids:0
-#: field:account.journal,plan_id:0
+#: field:account.analytic.plan,plan_ids:0 field:account.journal,plan_id:0
 msgid "Analytic Plans"
 msgstr "Планы аналитики"
 
@@ -273,8 +272,7 @@ msgid "From Date:"
 msgstr ""
 
 #. module: account_analytic_plans
-#: field:account.analytic.plan,id:0
-#: field:account.analytic.plan.instance,id:0
+#: field:account.analytic.plan,id:0 field:account.analytic.plan.instance,id:0
 #: field:account.analytic.plan.instance.line,id:0
 #: field:account.analytic.plan.line,id:0
 #: field:account.crossovered.analytic,id:0
@@ -345,7 +343,7 @@ msgstr "Несколько планов"
 
 #. module: account_analytic_plans
 #: code:addons/account_analytic_plans/account_analytic_plans.py:335
-#: code:addons/account_analytic_plans/account_analytic_plans.py:469
+#: code:addons/account_analytic_plans/account_analytic_plans.py:471
 #, python-format
 msgid "No Analytic Journal!"
 msgstr ""
@@ -463,7 +461,7 @@ msgstr "Ошибка пользователя!"
 
 #. module: account_analytic_plans
 #: code:addons/account_analytic_plans/account_analytic_plans.py:335
-#: code:addons/account_analytic_plans/account_analytic_plans.py:469
+#: code:addons/account_analytic_plans/account_analytic_plans.py:471
 #, python-format
 msgid "You have to define an analytic journal on the '%s' journal."
 msgstr "Вы должны определить журнал аналитики для журнала '%s'"
@@ -472,3 +470,9 @@ msgstr "Вы должны определить журнал аналитики �
 #: model:ir.actions.act_window,name:account_analytic_plans.action_analytic_plan_create_model
 msgid "analytic.plan.create.model.action"
 msgstr "analytic.plan.create.model.action"
+
+#. module: account_analytic_plans
+#: view:account.crossovered.analytic:account_analytic_plans.view_account_crossovered_analytic
+#: view:analytic.plan.create.model:account_analytic_plans.view_analytic_plan_create_model_msg
+msgid "or"
+msgstr ""
