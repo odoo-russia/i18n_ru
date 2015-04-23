@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-server\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-01-21 14:07+0000\n"
-"PO-Revision-Date: 2015-04-24 00:30+0700\n"
+"PO-Revision-Date: 2015-04-24 02:36+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "base/ru/>\n"
@@ -10938,7 +10938,7 @@ msgstr "Система управления знаниями"
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_si
 msgid "Kontni načrt za gospodarske družbe"
-msgstr ""
+msgstr "План счетов для компаний"
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -11331,7 +11331,7 @@ msgstr "Литовский / Lietuvių kalba"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat
 msgid "Live Chat"
-msgstr ""
+msgstr "Живой чат"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat
@@ -16062,7 +16062,7 @@ msgstr ""
 #. module: base
 #: selection:ir.translation,state:0
 msgid "Translation in Progress"
-msgstr ""
+msgstr "Перевод в процессе"
 
 #. module: base
 #: view:ir.translation:base.view_translation_form
@@ -16070,7 +16070,7 @@ msgstr ""
 #: view:ir.translation:base.view_translation_tree
 #: model:ir.ui.menu,name:base.menu_translation
 msgid "Translations"
-msgstr ""
+msgstr "Переводы"
 
 #. module: base
 #: selection:ir.actions.act_window,view_type:0
@@ -17558,12 +17558,12 @@ msgstr ""
 #. module: base
 #: view:ir.actions.server:base.view_server_action_form
 msgid "object.partner_id"
-msgstr ""
+msgstr "object.partner_id"
 
 #. module: base
 #: view:ir.actions.server:base.view_server_action_form
 msgid "object.partner_id.currency_id"
-msgstr ""
+msgstr "object.partner_id.currency_id"
 
 #. module: base
 #: view:ir.attachment:base.view_attachment_form
@@ -17593,6 +17593,9 @@ msgid ""
 "                                                self.pool[\"res.partner\"]."
 "create(cr, uid, {\"name\": partner_name}, context=context)"
 msgstr ""
+"partner_name = obj.name + '_code'\n"
+"                                                self.pool[\"res.partner\"]."
+"create(cr, uid, {\"name\": partner_name}, context=context)"
 
 #. module: base
 #: view:ir.actions.server:base.view_server_action_form
@@ -17755,25 +17758,6 @@ msgstr "Аландские острова"
 msgid "中国会计科目表"
 msgstr ""
 
-msgid ""
-"\n"
-"Ecrypted passwords\n"
-"==================\n"
-"\n"
-"Interaction with LDAP authentication:\n"
-"-------------------------------------\n"
-"This module is currently not compatible with the ``user_ldap`` module and\n"
-"will disable LDAP authentication completely if installed at the same time.\n"
-msgstr ""
-"\n"
-"Зашифрованные пароли\n"
-"==================\n"
-"\n"
-"Взаимодействие с LDAP - авторизацией\n"
-"-------------------------------------\n"
-"This module is currently not compatible with the ``user_ldap`` module and\n"
-"will disable LDAP authentication completely if installed at the same time.\n"
-
 #, fuzzy
 #~ msgid "eInvoicing & Payments"
 #~ msgstr "Выставление счетов и платежи"
@@ -17809,3 +17793,26 @@ msgstr ""
 #, fuzzy
 #~ msgid "Installed Modules"
 #~ msgstr "Установить модули"
+
+#~ msgid ""
+#~ "\n"
+#~ "Ecrypted passwords\n"
+#~ "==================\n"
+#~ "\n"
+#~ "Interaction with LDAP authentication:\n"
+#~ "-------------------------------------\n"
+#~ "This module is currently not compatible with the ``user_ldap`` module "
+#~ "and\n"
+#~ "will disable LDAP authentication completely if installed at the same "
+#~ "time.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Зашифрованные пароли\n"
+#~ "==================\n"
+#~ "\n"
+#~ "Взаимодействие с LDAP - авторизацией\n"
+#~ "-------------------------------------\n"
+#~ "This module is currently not compatible with the ``user_ldap`` module "
+#~ "and\n"
+#~ "will disable LDAP authentication completely if installed at the same "
+#~ "time.\n"
