@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-22 23:06+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 06:33+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "website_event/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-23 07:56+0000\n"
 
 #. module: website_event
@@ -165,8 +165,8 @@ msgstr "Перетащите 'Текстовый блок' на вашу стр�
 
 #. module: website_event
 #: model:ir.model,name:website_event.model_event_event
-msgid "Email Thread"
-msgstr "Цепочка электронных адресов"
+msgid "Event"
+msgstr ""
 
 #. module: website_event
 #: view:website:website_event.introduction-open-days-in-los-angeles
@@ -189,6 +189,18 @@ msgstr "Меню события"
 #: view:website:website_event.404
 msgid "Event not found!"
 msgstr "Событие не найдено!"
+
+#. module: website_event
+#: model:mail.message.subtype,description:website_event.mt_event_published
+#: model:mail.message.subtype,name:website_event.mt_event_published
+msgid "Event published"
+msgstr ""
+
+#. module: website_event
+#: model:mail.message.subtype,description:website_event.mt_event_unpublished
+#: model:mail.message.subtype,name:website_event.mt_event_unpublished
+msgid "Event unpublished"
+msgstr ""
 
 #. module: website_event
 #: view:website:website.layout
@@ -240,7 +252,7 @@ msgid "Insert blocks to layout the body of your event."
 msgstr "Вставить блоки, чтобы разбить тело вашего события."
 
 #. module: website_event
-#: code:addons/website_event/models/event.py:38
+#: code:addons/website_event/models/event.py:44
 #, python-format
 msgid "Introduction"
 msgstr "Введение"
@@ -266,14 +278,14 @@ msgid "Local Events"
 msgstr "Локальные события"
 
 #. module: website_event
-#: code:addons/website_event/models/event.py:39
+#: code:addons/website_event/models/event.py:45
 #, python-format
 msgid "Location"
 msgstr "Местоположение"
 
 #. module: website_event
 #. openerp-web
-#: code:addons/website_event/controllers/main.py:209
+#: code:addons/website_event/controllers/main.py:215
 #: code:addons/website_event/static/src/js/website.tour.event.js:25
 #: code:addons/website_event/static/src/js/website_event.editor.js:11
 #: view:website:website.layout
@@ -372,7 +384,7 @@ msgid "Publish your event"
 msgstr "Опубликовать ваше событие"
 
 #. module: website_event
-#: code:addons/website_event/models/event.py:61
+#: code:addons/website_event/models/event.py:67
 #, python-format
 msgid "Register"
 msgstr "Регистрация"
@@ -557,6 +569,14 @@ msgid "pull-right"
 msgstr "выравнивание по правому краю"
 
 #. module: website_event
+#: view:website:website_event.event_details view:website:website_event.index
+msgid "to"
+msgstr ""
+
+#. module: website_event
 #: view:website:website_event.index
 msgid "to create your first event."
 msgstr "создать ваше первое событие."
+
+#~ msgid "Email Thread"
+#~ msgstr "Цепочка электронных адресов"

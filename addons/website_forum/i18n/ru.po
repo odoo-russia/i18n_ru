@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-22 23:04+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 06:35+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "website_forum/ru/>\n"
@@ -18,11 +18,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-27 08:32+0000\n"
 
 #. module: website_forum
-#: view:website:website_forum.header view:website:website_forum.post_comment
+#: model:email.template,body_html:website_forum.validation_email
+msgid ""
+"\n"
+"<p>\n"
+"    Hello ${object.name},\n"
+"</p>\n"
+"<p>\n"
+"    You have been invited to validate your email in order to get access to "
+"\"${object.company_id.name}\" Q/A Forums.\n"
+"</p>\n"
+"<p>\n"
+"    To validate your email, please click on the following link:\n"
+"</p>\n"
+"<ul>\n"
+"    <li><a href=\"${ctx.get('token_url')}\">Validate my account for "
+"\"${object.company_id.name}\" Q/A Forums</a></li>\n"
+"</ul>\n"
+"<p>\n"
+"    Thanks,\n"
+"</p>\n"
+"<pre>\n"
+"--\n"
+"${object.company_id.name or ''}\n"
+"${object.company_id.email or ''}\n"
+"${object.company_id.phone or ''}\n"
+"</pre>"
+msgstr ""
+
+#. module: website_forum
+#: model:email.template,subject:website_forum.validation_email
+msgid "${object.company_id.name} Forums validation"
+msgstr ""
+
+#. module: website_forum
+#: view:website:website_forum.header
 msgid "&times;"
 msgstr "&times;"
 
@@ -48,7 +82,7 @@ msgid "-1"
 msgstr "-1"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:328
+#: code:addons/website_forum/models/forum.py:374
 #, python-format
 msgid ""
 "<p>A new answer for <i>%s</i> has been posted. <a href=\"%s/forum/%s/"
@@ -58,7 +92,7 @@ msgstr ""
 "%s\">Нажмите здесь, чтобы перейти к публикации.</a></p>"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:334
+#: code:addons/website_forum/models/forum.py:380
 #, python-format
 msgid ""
 "<p>A new question <i>%s</i> has been asked on %s. <a href=\"%s/forum/%s/"
@@ -66,6 +100,13 @@ msgid ""
 msgstr ""
 "<p>Новый вопрос <i>%s</i> был задан по %s. <a href=\"%s/forum/%s/question/%s"
 "\">Нажмите здесь, чтобы перейти к вопросу.</a></p>"
+
+#. module: website_forum
+#: model:forum.forum,description:website_forum.forum_help
+msgid ""
+"<p>This community is for professionals and enthusiasts of our products and "
+"services.</p>"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.tag
@@ -82,6 +123,21 @@ msgstr ""
 #: view:website:website_forum.header
 msgid "About This Forum"
 msgstr "Об этом форуме"
+
+#. module: website_forum
+#: field:forum.forum,karma_answer_accept_own:0
+msgid "Accept an answer on its own questions"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_answer_accept_all:0
+msgid "Accept an answer to all questions"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_answer_accept:0
+msgid "Accepting an answer"
+msgstr ""
 
 #. module: website_forum
 #: field:forum.post,active:0 selection:forum.post,state:0
@@ -104,12 +160,37 @@ msgid "Answer"
 msgstr "Ответ"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:365
+#: code:addons/website_forum/models/forum.py:411
 #: model:mail.message.subtype,description:website_forum.mt_answer_edit
 #: model:mail.message.subtype,name:website_forum.mt_answer_edit
 #, python-format
 msgid "Answer Edited"
 msgstr "Ответ отредактирован"
+
+#. module: website_forum
+#: field:forum.forum,karma_answer:0
+msgid "Answer a question"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_answer_accepted:0
+msgid "Answer accepted"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_answer_downvote:0
+msgid "Answer downvoted"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_answer_flagged:0
+msgid "Answer flagged"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_answer_upvote:0
+msgid "Answer upvoted"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.post_description_full
@@ -129,6 +210,11 @@ msgid "Ask a Question"
 msgstr "Задать вопрос"
 
 #. module: website_forum
+#: field:forum.forum,karma_ask:0
+msgid "Ask a question"
+msgstr "Задать вопрос"
+
+#. module: website_forum
 #: view:website:website_forum.ask_question
 msgid "Ask your Question"
 msgstr "Задать ваш вопрос"
@@ -143,6 +229,11 @@ msgstr "Задан вопрос по"
 #: view:website:website_forum.header
 msgid "Asked:"
 msgstr "Задано:"
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_question_new:0
+msgid "Asking a question"
+msgstr ""
 
 #. module: website_forum
 #: view:forum.post:website_forum.view_forum_post_search
@@ -238,6 +329,11 @@ msgid "Can Upvote"
 msgstr "Можно поставить плюс"
 
 #. module: website_forum
+#: field:forum.forum,karma_retag:0
+msgid "Change question tags"
+msgstr ""
+
+#. module: website_forum
 #: view:website:website_forum.user_badges
 msgid "Check available badges"
 msgstr "Проверить доступные значки"
@@ -254,9 +350,31 @@ msgid "City"
 msgstr "Город"
 
 #. module: website_forum
+#: view:website:website_forum.header
+msgid ""
+"Click here to send a verification email allowing you to participate to the "
+"forum."
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_editor_clickable_link:0
+msgid "Clickable links (Editor)"
+msgstr ""
+
+#. module: website_forum
 #: selection:forum.post,state:0
 msgid "Close"
 msgstr "Закрыть"
+
+#. module: website_forum
+#: field:forum.forum,karma_close_all:0
+msgid "Close all posts"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_close_own:0
+msgid "Close its own posts"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.close_question
@@ -278,6 +396,16 @@ msgstr "Закрыто"
 #: view:website:website_forum.post_description_full
 msgid "Comment"
 msgstr "Комментарии"
+
+#. module: website_forum
+#: field:forum.forum,karma_comment_all:0
+msgid "Comment all posts"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_comment_own:0
+msgid "Comment its own posts"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.post_comment
@@ -312,10 +440,27 @@ msgid "Completed own biography"
 msgstr "Заполнил собственную биографию"
 
 #. module: website_forum
+#: view:website:website_forum.header
+msgid ""
+"Congratulations! Your email has just been validated. You may now participate "
+"to our forums."
+msgstr ""
+
+#. module: website_forum
 #: view:forum.post:website_forum.view_forum_post_search
 #: field:forum.post,content:0
 msgid "Content"
 msgstr "Содержание"
+
+#. module: website_forum
+#: field:forum.forum,karma_comment_convert_all:0
+msgid "Convert all answers to comments and vice versa"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_comment_convert_own:0
+msgid "Convert its own answers to comments and vice versa"
+msgstr ""
 
 #. module: website_forum
 #: help:forum.post,is_correct:0
@@ -369,6 +514,16 @@ msgid "Date of the last message posted on the record."
 msgstr "Дата последнего сообщения размещенного в отчете."
 
 #. module: website_forum
+#: field:forum.forum,karma_unlink_all:0
+msgid "Delete all posts"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_unlink_own:0
+msgid "Delete its own posts"
+msgstr ""
+
+#. module: website_forum
 #: field:forum.forum,description:0
 msgid "Description"
 msgstr "Описание"
@@ -379,6 +534,11 @@ msgstr "Описание"
 #: model:gamification.goal.definition,name:website_forum.definition_disciplined
 msgid "Disciplined"
 msgstr "Упорядочено"
+
+#. module: website_forum
+#: field:forum.forum,karma_downvote:0
+msgid "Downvote"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.edit_profile
@@ -396,9 +556,19 @@ msgid "Edit Your Previous Answer"
 msgstr "Редактировать ваш предыдущий ответ"
 
 #. module: website_forum
+#: field:forum.forum,karma_edit_all:0
+msgid "Edit all posts"
+msgstr ""
+
+#. module: website_forum
 #: view:website:website_forum.edit_post
 msgid "Edit answer"
 msgstr "Редактировать ответ"
+
+#. module: website_forum
+#: field:forum.forum,karma_edit_own:0
+msgid "Edit its own posts"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.edit_post
@@ -482,6 +652,11 @@ msgid "Filter on"
 msgstr "Фильтр включен"
 
 #. module: website_forum
+#: field:forum.forum,karma_flag:0
+msgid "Flag a post as offensive"
+msgstr ""
+
+#. module: website_forum
 #: view:website:website_forum.forum_index
 msgid "Followed"
 msgstr "Подписано"
@@ -500,7 +675,8 @@ msgstr "Подписчики"
 #. module: website_forum
 #: view:forum.forum:website_forum.view_forum_forum_form
 #: view:forum.post:website_forum.view_forum_post_search
-#: field:forum.post,forum_id:0 field:forum.tag,forum_id:0
+#: field:forum.post,forum_id:0 field:forum.post.vote,forum_id:0
+#: field:forum.tag,forum_id:0
 #: model:ir.actions.act_url,name:website_forum.action_open_forum
 #: model:ir.ui.menu,name:website_forum.menu_website_forum
 #: model:website.menu,name:website_forum.menu_questions
@@ -662,69 +838,24 @@ msgid "Is a Follower"
 msgstr "Является подписчиком"
 
 #. module: website_forum
+#: view:website:website_forum.header
+msgid "It appears your email has not been verified."
+msgstr ""
+
+#. module: website_forum
 #: field:res.users,karma:0 view:website:website_forum.user_detail_full
 msgid "Karma"
 msgstr "Карма"
 
 #. module: website_forum
-#: field:forum.forum,karma_gen_answer_accept:0
-msgid "Karma earned for accepting an anwer"
-msgstr "Заработанная карма для принятия ответа"
+#: view:forum.forum:website_forum.view_forum_forum_form
+msgid "Karma Gains"
+msgstr ""
 
 #. module: website_forum
-#: field:forum.forum,karma_gen_question_downvote:0
-msgid "Karma earned for downvoting a question"
-msgstr "Заработанная карма для минусования вопроса"
-
-#. module: website_forum
-#: field:forum.forum,karma_gen_answer_downvote:0
-msgid "Karma earned for downvoting an answer"
-msgstr "Заработанная карма для минусования ответа"
-
-#. module: website_forum
-#: field:forum.forum,karma_gen_answer_accepted:0
-msgid "Karma earned for having an answer accepted"
-msgstr "Заработанная карма для того, чтобы ответ был принят"
-
-#. module: website_forum
-#: field:forum.forum,karma_gen_answer_flagged:0
-msgid "Karma earned for having an answer flagged"
-msgstr "Заработанная карма для того, чтобы ответ был отмечен"
-
-#. module: website_forum
-#: field:forum.forum,karma_gen_question_new:0
-msgid "Karma earned for new questions"
-msgstr "Заработанная карма для новых вопросов"
-
-#. module: website_forum
-#: field:forum.forum,karma_gen_question_upvote:0
-msgid "Karma earned for upvoting a question"
-msgstr "Заработанная карма для плюсования вопроса"
-
-#. module: website_forum
-#: field:forum.forum,karma_gen_answer_upvote:0
-msgid "Karma earned for upvoting an answer"
-msgstr "Заработанная карма для плюсования ответа"
-
-#. module: website_forum
-#: field:forum.forum,karma_editor_clickable_link:0
-msgid "Karma for clickable links (Editor)"
-msgstr "Карма для ссылок, активируемых щелчком мышки (Редактор)"
-
-#. module: website_forum
-#: field:forum.forum,karma_editor_link_files:0
-msgid "Karma for linking files (Editor)"
-msgstr "Карма для связующих файлов (Редактор)"
-
-#. module: website_forum
-#: field:forum.forum,karma_answer_accept_own:0
-msgid "Karma to accept an answer on its own questions"
-msgstr "Карма для принятия ответа на собственные вопросы"
-
-#. module: website_forum
-#: field:forum.forum,karma_answer_accept_all:0
-msgid "Karma to accept an answers to all questions"
-msgstr "Карма для принятия ответов на все вопросы"
+#: view:forum.forum:website_forum.view_forum_forum_form
+msgid "Karma Requirements"
+msgstr ""
 
 #. module: website_forum
 #: field:forum.post,karma_accept:0
@@ -737,24 +868,9 @@ msgid "Karma to answer"
 msgstr "Карма для ответа"
 
 #. module: website_forum
-#: field:forum.forum,karma_answer:0
-msgid "Karma to answer a question"
-msgstr "Карма для ответа на вопрос"
-
-#. module: website_forum
 #: field:forum.post,karma_ask:0
 msgid "Karma to ask"
 msgstr "Карма для вопроса"
-
-#. module: website_forum
-#: field:forum.forum,karma_ask:0
-msgid "Karma to ask a new question"
-msgstr "Карма для нового вопроса"
-
-#. module: website_forum
-#: field:forum.forum,karma_retag:0
-msgid "Karma to change question tags"
-msgstr "Карма для изменения тегов вопроса"
 
 #. module: website_forum
 #: field:forum.post,karma_close:0
@@ -762,52 +878,12 @@ msgid "Karma to close"
 msgstr "Карма для закрытия"
 
 #. module: website_forum
-#: field:forum.forum,karma_close_all:0
-msgid "Karma to close all posts"
-msgstr "Карма для закрытия всех публикаций"
-
-#. module: website_forum
-#: field:forum.forum,karma_close_own:0
-msgid "Karma to close its own posts"
-msgstr "Карма для закрытия собственных публикаций"
-
-#. module: website_forum
 #: field:forum.post,karma_comment:0
 msgid "Karma to comment"
 msgstr "Карма для комментирования"
 
 #. module: website_forum
-#: field:forum.forum,karma_comment_all:0
-msgid "Karma to comment all posts"
-msgstr "Карма для комментирования всех сообщений"
-
-#. module: website_forum
-#: field:forum.forum,karma_comment_own:0
-msgid "Karma to comment its own posts"
-msgstr "Карма для комментирования собственных сообщений"
-
-#. module: website_forum
-#: field:forum.forum,karma_comment_convert_all:0
-msgid "Karma to convert all answers to answers and vice versa"
-msgstr "Карма для преобразования всех ответов в ответы и наоборот"
-
-#. module: website_forum
-#: field:forum.forum,karma_comment_convert_own:0
-msgid "Karma to convert its own answers to comments and vice versa"
-msgstr "Карма для преобразования собственных ответов в комментарии и наоборот"
-
-#. module: website_forum
-#: field:forum.forum,karma_unlink_all:0
-msgid "Karma to delete all posts"
-msgstr "Карма для удаления всех сообщений"
-
-#. module: website_forum
-#: field:forum.forum,karma_unlink_own:0
-msgid "Karma to delete its own posts"
-msgstr "Карма для удаления собственных сообщений"
-
-#. module: website_forum
-#: field:forum.forum,karma_downvote:0 field:forum.post,karma_downvote:0
+#: field:forum.post,karma_downvote:0
 msgid "Karma to downvote"
 msgstr "Карма для минусования"
 
@@ -817,37 +893,12 @@ msgid "Karma to edit"
 msgstr "Карма для редактирования"
 
 #. module: website_forum
-#: field:forum.forum,karma_edit_all:0
-msgid "Karma to edit all posts"
-msgstr "Карма для редактирования всех сообщений"
-
-#. module: website_forum
-#: field:forum.forum,karma_edit_own:0
-msgid "Karma to edit its own posts"
-msgstr "Карма для редактирования собственных сообщений"
-
-#. module: website_forum
-#: field:forum.forum,karma_flag:0
-msgid "Karma to flag a post as offensive"
-msgstr "Карма для отметки сообщения, как оскорбительного"
-
-#. module: website_forum
 #: field:forum.post,karma_unlink:0
 msgid "Karma to unlink"
 msgstr "Карма для отмены связи"
 
 #. module: website_forum
-#: field:forum.forum,karma_comment_unlink_own:0
-msgid "Karma to unlink its own comments"
-msgstr "Карма для отмены связи между собственными комментариями"
-
-#. module: website_forum
-#: field:forum.forum,karma_comment_unlink_all:0
-msgid "Karma to unlinnk all comments"
-msgstr "Карма для отмены связи между всеми комментариями"
-
-#. module: website_forum
-#: field:forum.forum,karma_upvote:0 field:forum.post,karma_upvote:0
+#: field:forum.post,karma_upvote:0
 msgid "Karma to upvote"
 msgstr "Карма для плюсования"
 
@@ -882,6 +933,11 @@ msgstr "Дата последней активности"
 #: view:website:website_forum.header
 msgid "Last updated:"
 msgstr "Последнее обновление:"
+
+#. module: website_forum
+#: field:forum.forum,karma_editor_link_files:0
+msgid "Linking files (Editor)"
+msgstr ""
 
 #. module: website_forum
 #: field:forum.forum,message_ids:0 field:forum.post,message_ids:0
@@ -1122,6 +1178,11 @@ msgid "Posts"
 msgstr "Посты"
 
 #. module: website_forum
+#: view:website:website_forum.edit_profile
+msgid "Public profile"
+msgstr ""
+
+#. module: website_forum
 #: model:gamification.badge,name:website_forum.badge_25
 #: model:gamification.challenge,name:website_forum.challenge_pundit
 #: model:gamification.goal.definition,name:website_forum.definition_pundit
@@ -1139,12 +1200,17 @@ msgid "Question"
 msgstr "Вопрос"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:368
+#: code:addons/website_forum/models/forum.py:414
 #: model:mail.message.subtype,description:website_forum.mt_question_edit
 #: model:mail.message.subtype,name:website_forum.mt_question_edit
 #, python-format
 msgid "Question Edited"
 msgstr "Вопрос отредактирован"
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_question_downvote:0
+msgid "Question downvoted"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.404
@@ -1155,6 +1221,11 @@ msgstr "Вопрос не найден!"
 #: view:website:website_forum.header
 msgid "Question tools"
 msgstr "Инструменты вопроса"
+
+#. module: website_forum
+#: field:forum.forum,karma_gen_question_upvote:0
+msgid "Question upvoted"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.close_question
@@ -1168,7 +1239,7 @@ msgid "Questions"
 msgstr "Вопросы"
 
 #. module: website_forum
-#: code:addons/website_forum/models/forum.py:330
+#: code:addons/website_forum/models/forum.py:376
 #, python-format
 msgid "Re: %s"
 msgstr "Re: %s"
@@ -1319,6 +1390,11 @@ msgid "The question has been closed"
 msgstr "Вопрос был закрыт"
 
 #. module: website_forum
+#: help:forum.post.vote,recipient_id:0
+msgid "The user receiving the vote"
+msgstr ""
+
+#. module: website_forum
 #: view:website:website_forum.private_profile
 msgid "This profile is private!"
 msgstr "Это приватный профиль!"
@@ -1329,6 +1405,11 @@ msgid "Title"
 msgstr "Заголовок"
 
 #. module: website_forum
+#: field:forum.post.vote,recipient_id:0
+msgid "To"
+msgstr ""
+
+#. module: website_forum
 #: view:website:website_forum.header
 msgid "Toggle navigation"
 msgstr "Переключить навигацию"
@@ -1337,6 +1418,16 @@ msgstr "Переключить навигацию"
 #: view:website:website_forum.forum_index
 msgid "Unanswered"
 msgstr "Не отвечено"
+
+#. module: website_forum
+#: field:forum.forum,karma_comment_unlink_all:0
+msgid "Unlink all comments"
+msgstr ""
+
+#. module: website_forum
+#: field:forum.forum,karma_comment_unlink_own:0
+msgid "Unlink its own comments"
+msgstr ""
 
 #. module: website_forum
 #: field:forum.forum,message_unread:0 field:forum.post,message_unread:0
@@ -1357,6 +1448,11 @@ msgstr "Обновить"
 #: field:forum.post,write_uid:0
 msgid "Updated by"
 msgstr "Обновлено"
+
+#. module: website_forum
+#: field:forum.forum,karma_upvote:0
+msgid "Upvote"
+msgstr ""
 
 #. module: website_forum
 #: model:gamification.goal.definition,name:website_forum.definition_student
@@ -1510,6 +1606,12 @@ msgid "bronze"
 msgstr "бронза"
 
 #. module: website_forum
+#: view:website:website_forum.display_post
+#: view:website:website_forum.post_description_full
+msgid "by"
+msgstr ""
+
+#. module: website_forum
 #: view:website:website_forum.forum_index
 msgid "by activity date"
 msgstr "по дате действия"
@@ -1603,6 +1705,18 @@ msgstr "неактуальный или устаревший"
 #: model:forum.post.reason,name:website_forum.reason_2
 msgid "off-topic or not relevant"
 msgstr "не по теме или неактуальный"
+
+#. module: website_forum
+#: view:website:website_forum.display_post
+#: view:website:website_forum.post_comment
+#: view:website:website_forum.post_description_full
+msgid "on"
+msgstr ""
+
+#. module: website_forum
+#: view:website:website_forum.close_question
+msgid "or"
+msgstr ""
 
 #. module: website_forum
 #: view:website:website_forum.ask_question
@@ -1709,3 +1823,33 @@ msgstr "веб-сайт"
 #: view:website:website_forum.display_post
 msgid "with"
 msgstr "с"
+
+#~ msgid "Karma earned for downvoting a question"
+#~ msgstr "Заработанная карма для минусования вопроса"
+
+#~ msgid "Karma earned for downvoting an answer"
+#~ msgstr "Заработанная карма для минусования ответа"
+
+#~ msgid "Karma earned for having an answer accepted"
+#~ msgstr "Заработанная карма для того, чтобы ответ был принят"
+
+#~ msgid "Karma earned for having an answer flagged"
+#~ msgstr "Заработанная карма для того, чтобы ответ был отмечен"
+
+#~ msgid "Karma earned for new questions"
+#~ msgstr "Заработанная карма для новых вопросов"
+
+#~ msgid "Karma earned for upvoting a question"
+#~ msgstr "Заработанная карма для плюсования вопроса"
+
+#~ msgid "Karma earned for upvoting an answer"
+#~ msgstr "Заработанная карма для плюсования ответа"
+
+#~ msgid "Karma to answer a question"
+#~ msgstr "Карма для ответа на вопрос"
+
+#~ msgid "Karma to ask a new question"
+#~ msgstr "Карма для нового вопроса"
+
+#~ msgid "Karma to convert all answers to answers and vice versa"
+#~ msgstr "Карма для преобразования всех ответов в ответы и наоборот"

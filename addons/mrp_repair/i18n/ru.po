@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-03 13:23+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 04:20+0700\n"
 "Last-Translator: user2 <user2@starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/mrp_repair/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"mrp_repair/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:30+0000\n"
 
 #. module: mrp_repair
@@ -28,8 +28,8 @@ msgid ""
 "draft status.                         \n"
 "* The 'Confirmed' status is set automatically as confirm when repair order "
 "in confirm status.                         \n"
-"* The 'Done' status is set automatically when repair order is completed.     "
-"                   \n"
+"* The 'Done' status is set automatically when repair order is "
+"completed.                        \n"
 "* The 'Cancelled' status is set automatically when user cancel repair order."
 msgstr ""
 
@@ -38,8 +38,8 @@ msgstr ""
 msgid ""
 " * The 'Draft' status is used when a user is encoding a new and unconfirmed "
 "repair order.             \n"
-"* The 'Confirmed' status is used when a user confirms the repair order.      "
-"       \n"
+"* The 'Confirmed' status is used when a user confirms the repair "
+"order.             \n"
 "* The 'Ready to Repair' status is used to start to repairing, user can start "
 "repairing only after repair order is confirmed.             \n"
 "* The 'To be Invoiced' status is used to generate the invoice before or "
@@ -129,8 +129,7 @@ msgid "Cancel Repair Order"
 msgstr ""
 
 #. module: mrp_repair
-#: selection:mrp.repair,state:0
-#: selection:mrp.repair.line,state:0
+#: selection:mrp.repair,state:0 selection:mrp.repair.line,state:0
 msgid "Cancelled"
 msgstr "Отменено"
 
@@ -152,13 +151,12 @@ msgstr ""
 
 #. module: mrp_repair
 #: view:mrp.repair:mrp_repair.view_repair_order_form_filter
-#: selection:mrp.repair,state:0
-#: selection:mrp.repair.line,state:0
+#: selection:mrp.repair,state:0 selection:mrp.repair.line,state:0
 msgid "Confirmed"
 msgstr "Утверждено"
 
 #. module: mrp_repair
-#: code:addons/mrp_repair/mrp_repair.py:539
+#: code:addons/mrp_repair/mrp_repair.py:541
 #, python-format
 msgid ""
 "Couldn't find a pricelist line matching this product and quantity.\n"
@@ -178,19 +176,15 @@ msgid "Create invoices"
 msgstr "Создать счета"
 
 #. module: mrp_repair
-#: field:mrp.repair,create_uid:0
-#: field:mrp.repair.cancel,create_uid:0
-#: field:mrp.repair.fee,create_uid:0
-#: field:mrp.repair.line,create_uid:0
+#: field:mrp.repair,create_uid:0 field:mrp.repair.cancel,create_uid:0
+#: field:mrp.repair.fee,create_uid:0 field:mrp.repair.line,create_uid:0
 #: field:mrp.repair.make_invoice,create_uid:0
 msgid "Created by"
 msgstr "Создано"
 
 #. module: mrp_repair
-#: field:mrp.repair,create_date:0
-#: field:mrp.repair.cancel,create_date:0
-#: field:mrp.repair.fee,create_date:0
-#: field:mrp.repair.line,create_date:0
+#: field:mrp.repair,create_date:0 field:mrp.repair.cancel,create_date:0
+#: field:mrp.repair.fee,create_date:0 field:mrp.repair.line,create_date:0
 #: field:mrp.repair.make_invoice,create_date:0
 msgid "Created on"
 msgstr "Создан"
@@ -216,8 +210,7 @@ msgid "Delivery Location"
 msgstr ""
 
 #. module: mrp_repair
-#: field:mrp.repair.fee,name:0
-#: field:mrp.repair.line,name:0
+#: field:mrp.repair.fee,name:0 field:mrp.repair.line,name:0
 #: view:website:mrp_repair.report_mrprepairorder
 msgid "Description"
 msgstr "Описание"
@@ -316,10 +309,8 @@ msgstr ""
 "непосредственно в HTML формате для того, чтобы вставить в виды kanban."
 
 #. module: mrp_repair
-#: field:mrp.repair,id:0
-#: field:mrp.repair.cancel,id:0
-#: field:mrp.repair.fee,id:0
-#: field:mrp.repair.line,id:0
+#: field:mrp.repair,id:0 field:mrp.repair.cancel,id:0
+#: field:mrp.repair.fee,id:0 field:mrp.repair.line,id:0
 #: field:mrp.repair.make_invoice,id:0
 msgid "ID"
 msgstr "ID"
@@ -377,8 +368,7 @@ msgstr "Адрес для доставки и выставления счета:
 
 #. module: mrp_repair
 #: view:mrp.repair:mrp_repair.view_repair_order_form_filter
-#: field:mrp.repair,invoiced:0
-#: field:mrp.repair.fee,invoiced:0
+#: field:mrp.repair,invoiced:0 field:mrp.repair.fee,invoiced:0
 #: field:mrp.repair.line,invoiced:0
 msgid "Invoiced"
 msgstr "Счет"
@@ -404,19 +394,15 @@ msgid "Last Message Date"
 msgstr "Дата последнего сообщения"
 
 #. module: mrp_repair
-#: field:mrp.repair,write_uid:0
-#: field:mrp.repair.cancel,write_uid:0
-#: field:mrp.repair.fee,write_uid:0
-#: field:mrp.repair.line,write_uid:0
+#: field:mrp.repair,write_uid:0 field:mrp.repair.cancel,write_uid:0
+#: field:mrp.repair.fee,write_uid:0 field:mrp.repair.line,write_uid:0
 #: field:mrp.repair.make_invoice,write_uid:0
 msgid "Last Updated by"
 msgstr "Последний раз обновлено"
 
 #. module: mrp_repair
-#: field:mrp.repair,write_date:0
-#: field:mrp.repair.cancel,write_date:0
-#: field:mrp.repair.fee,write_date:0
-#: field:mrp.repair.line,write_date:0
+#: field:mrp.repair,write_date:0 field:mrp.repair.cancel,write_date:0
+#: field:mrp.repair.fee,write_date:0 field:mrp.repair.line,write_date:0
 #: field:mrp.repair.make_invoice,write_date:0
 msgid "Last Updated on"
 msgstr "Последний раз обновлено"
@@ -462,7 +448,7 @@ msgid "No Invoice"
 msgstr ""
 
 #. module: mrp_repair
-#: code:addons/mrp_repair/mrp_repair.py:526
+#: code:addons/mrp_repair/mrp_repair.py:528
 #, python-format
 msgid "No Pricelist!"
 msgstr ""
@@ -493,7 +479,7 @@ msgid "No product defined on Fees!"
 msgstr ""
 
 #. module: mrp_repair
-#: code:addons/mrp_repair/mrp_repair.py:537
+#: code:addons/mrp_repair/mrp_repair.py:539
 #, python-format
 msgid "No valid pricelist line found !"
 msgstr ""
@@ -546,8 +532,7 @@ msgstr ""
 
 #. module: mrp_repair
 #: view:mrp.repair:mrp_repair.view_repair_order_form_filter
-#: field:mrp.repair.fee,product_id:0
-#: field:mrp.repair.line,product_id:0
+#: field:mrp.repair.fee,product_id:0 field:mrp.repair.line,product_id:0
 msgid "Product"
 msgstr "Товар"
 
@@ -562,8 +547,7 @@ msgid "Product Quantity"
 msgstr ""
 
 #. module: mrp_repair
-#: field:mrp.repair,product_uom:0
-#: field:mrp.repair.fee,product_uom:0
+#: field:mrp.repair,product_uom:0 field:mrp.repair.fee,product_uom:0
 #: field:mrp.repair.line,product_uom:0
 msgid "Product Unit of Measure"
 msgstr "Ед. изм. продукции"
@@ -660,8 +644,7 @@ msgid "Repair Order N°:"
 msgstr ""
 
 #. module: mrp_repair
-#: field:mrp.repair.fee,repair_id:0
-#: field:mrp.repair.line,repair_id:0
+#: field:mrp.repair.fee,repair_id:0 field:mrp.repair.line,repair_id:0
 msgid "Repair Order Reference"
 msgstr ""
 
@@ -694,8 +677,7 @@ msgid "Repair order is not invoiced."
 msgstr ""
 
 #. module: mrp_repair
-#: field:mrp.repair,repaired:0
-#: selection:mrp.repair,state:0
+#: field:mrp.repair,repaired:0 selection:mrp.repair,state:0
 msgid "Repaired"
 msgstr ""
 
@@ -751,8 +733,7 @@ msgstr ""
 
 #. module: mrp_repair
 #: view:mrp.repair:mrp_repair.view_repair_order_form_filter
-#: field:mrp.repair,state:0
-#: field:mrp.repair.line,state:0
+#: field:mrp.repair,state:0 field:mrp.repair.line,state:0
 msgid "Status"
 msgstr "Статус"
 
@@ -773,8 +754,7 @@ msgid "Tax"
 msgstr ""
 
 #. module: mrp_repair
-#: field:mrp.repair,amount_tax:0
-#: field:mrp.repair.fee,tax_id:0
+#: field:mrp.repair,amount_tax:0 field:mrp.repair.fee,tax_id:0
 #: field:mrp.repair.line,tax_id:0
 #: view:website:mrp_repair.report_mrprepairorder
 msgid "Taxes"
@@ -810,8 +790,7 @@ msgid ""
 msgstr ""
 
 #. module: mrp_repair
-#: field:mrp.repair.fee,to_invoice:0
-#: field:mrp.repair.line,to_invoice:0
+#: field:mrp.repair.fee,to_invoice:0 field:mrp.repair.line,to_invoice:0
 msgid "To Invoice"
 msgstr "Выписать счет"
 
@@ -847,8 +826,7 @@ msgid "Under Repair"
 msgstr ""
 
 #. module: mrp_repair
-#: field:mrp.repair.fee,price_unit:0
-#: field:mrp.repair.line,price_unit:0
+#: field:mrp.repair.fee,price_unit:0 field:mrp.repair.line,price_unit:0
 #: view:website:mrp_repair.report_mrprepairorder
 msgid "Unit Price"
 msgstr "Цена единицы"
@@ -920,11 +898,17 @@ msgid "You have to select a Partner Invoice Address in the repair form!"
 msgstr ""
 
 #. module: mrp_repair
-#: code:addons/mrp_repair/mrp_repair.py:528
+#: code:addons/mrp_repair/mrp_repair.py:530
 #, python-format
 msgid ""
 "You have to select a pricelist in the Repair form !\n"
 "Please set one before choosing a product."
+msgstr ""
+
+#. module: mrp_repair
+#: view:mrp.repair.cancel:mrp_repair.view_cancel_repair
+#: view:mrp.repair.make_invoice:mrp_repair.view_make_invoice
+msgid "or"
 msgstr ""
 
 #. module: mrp_repair

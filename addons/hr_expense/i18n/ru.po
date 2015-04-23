@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-01 20:48+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 02:15+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/hr_expense/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"hr_expense/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:12+0000\n"
 
 #. module: hr_expense
@@ -102,7 +102,6 @@ msgstr "Авиабилет"
 
 #. module: hr_expense
 #: field:hr.expense.line,analytic_account:0
-#: view:hr.expense.report:hr_expense.view_hr_expense_report_search
 #: field:hr.expense.report,analytic_account:0
 msgid "Analytic account"
 msgstr "Аналитический счет"
@@ -179,18 +178,16 @@ msgstr "Подтвержденные расходы"
 
 #. module: hr_expense
 #: view:hr.expense.report:hr_expense.view_hr_expense_report_search
-msgid "Create Date"
-msgstr "Дата создания"
+msgid "Create Month"
+msgstr ""
 
 #. module: hr_expense
-#: field:hr.expense.expense,create_uid:0
-#: field:hr.expense.line,create_uid:0
+#: field:hr.expense.expense,create_uid:0 field:hr.expense.line,create_uid:0
 msgid "Created by"
 msgstr "Создано"
 
 #. module: hr_expense
-#: field:hr.expense.expense,create_date:0
-#: field:hr.expense.line,create_date:0
+#: field:hr.expense.expense,create_date:0 field:hr.expense.line,create_date:0
 msgid "Created on"
 msgstr "Создан"
 
@@ -207,8 +204,7 @@ msgid "Currency"
 msgstr "Валюта"
 
 #. module: hr_expense
-#: field:hr.expense.expense,date:0
-#: field:hr.expense.line,date_value:0
+#: field:hr.expense.expense,date:0 field:hr.expense.line,date_value:0
 #: view:website:hr_expense.report_expense
 msgid "Date"
 msgstr "Дата"
@@ -232,8 +228,8 @@ msgid ""
 "Date of the confirmation of the sheet expense. It's filled when the button "
 "Confirm is pressed."
 msgstr ""
-"Дата утверждения расходного листа. Заполняется когда нажата кнопка \""
-"Утвердить\"."
+"Дата утверждения расходного листа. Заполняется когда нажата кнопка "
+"\"Утвердить\"."
 
 #. module: hr_expense
 #: help:hr.expense.expense,message_last_post:0
@@ -281,8 +277,7 @@ msgstr "Подразделение"
 
 #. module: hr_expense
 #: view:hr.expense.expense:hr_expense.view_expenses_form
-#: field:hr.expense.expense,name:0
-#: field:hr.expense.line,description:0
+#: field:hr.expense.expense,name:0 field:hr.expense.line,description:0
 msgid "Description"
 msgstr "Описание"
 
@@ -310,7 +305,6 @@ msgstr "Черновик"
 #. module: hr_expense
 #: view:hr.expense.expense:hr_expense.view_hr_expense_filter
 #: field:hr.expense.expense,employee_id:0
-#: view:hr.expense.report:hr_expense.view_hr_expense_report_search
 msgid "Employee"
 msgstr "Сотрудник"
 
@@ -328,8 +322,8 @@ msgstr "Сотрудник:"
 #: code:addons/hr_expense/hr_expense.py:167
 #: code:addons/hr_expense/hr_expense.py:230
 #: code:addons/hr_expense/hr_expense.py:232
-#: code:addons/hr_expense/hr_expense.py:345
-#: code:addons/hr_expense/hr_expense.py:349
+#: code:addons/hr_expense/hr_expense.py:344
+#: code:addons/hr_expense/hr_expense.py:348
 #, python-format
 msgid "Error!"
 msgstr "Ошибка!"
@@ -342,7 +336,7 @@ msgid "Expense"
 msgstr "Расход"
 
 #. module: hr_expense
-#: code:addons/hr_expense/hr_expense.py:374
+#: code:addons/hr_expense/hr_expense.py:373
 #, python-format
 msgid "Expense Account Move"
 msgstr "Перемещение расходных счетов"
@@ -445,8 +439,7 @@ msgid "Followers"
 msgstr "Подписчики"
 
 #. module: hr_expense
-#: field:hr.expense.expense,journal_id:0
-#: field:hr.expense.report,journal_id:0
+#: field:hr.expense.expense,journal_id:0 field:hr.expense.report,journal_id:0
 msgid "Force Journal"
 msgstr "Принудительно в журнал"
 
@@ -496,8 +489,7 @@ msgid "Hotel Accommodation"
 msgstr "Размещение в отеле"
 
 #. module: hr_expense
-#: field:hr.expense.expense,id:0
-#: field:hr.expense.line,id:0
+#: field:hr.expense.expense,id:0 field:hr.expense.line,id:0
 #: field:hr.expense.report,id:0
 msgid "ID"
 msgstr "ID"
@@ -523,14 +515,12 @@ msgid "Last Message Date"
 msgstr "Дата последнего сообщения"
 
 #. module: hr_expense
-#: field:hr.expense.expense,write_uid:0
-#: field:hr.expense.line,write_uid:0
+#: field:hr.expense.expense,write_uid:0 field:hr.expense.line,write_uid:0
 msgid "Last Updated by"
 msgstr "Последний раз обновлено"
 
 #. module: hr_expense
-#: field:hr.expense.expense,write_date:0
-#: field:hr.expense.line,write_date:0
+#: field:hr.expense.expense,write_date:0 field:hr.expense.line,write_date:0
 msgid "Last Updated on"
 msgstr "Последний раз обновлено"
 
@@ -581,7 +571,7 @@ msgstr ""
 "установленным типом \"Закупка\"."
 
 #. module: hr_expense
-#: code:addons/hr_expense/hr_expense.py:345
+#: code:addons/hr_expense/hr_expense.py:344
 #, python-format
 msgid ""
 "No purchase account found for the product %s (or for his category), please "
@@ -611,14 +601,14 @@ msgid "Paid"
 msgstr "Оплачено"
 
 #. module: hr_expense
-#: code:addons/hr_expense/hr_expense.py:349
+#: code:addons/hr_expense/hr_expense.py:348
 #, python-format
 msgid ""
 "Please configure Default Expense account for Product purchase: "
 "`property_account_expense_categ`."
 msgstr ""
-"Пожалуйста, создайте счет расхода по умолчанию для закупки "
-"продукта:`property_account_expense_categ`."
+"Пожалуйста, создайте счет расхода по умолчанию для закупки продукта:"
+"`property_account_expense_categ`."
 
 #. module: hr_expense
 #: view:website:hr_expense.report_expense
@@ -633,6 +623,11 @@ msgid "Product"
 msgstr "Товар"
 
 #. module: hr_expense
+#: field:hr.expense.report,product_qty:0
+msgid "Product Quantity"
+msgstr ""
+
+#. module: hr_expense
 #: model:ir.model,name:hr_expense.model_product_template
 msgid "Product Template"
 msgstr "Шаблон продукта"
@@ -643,7 +638,6 @@ msgid "Products"
 msgstr "Продукты"
 
 #. module: hr_expense
-#: field:hr.expense.report,product_qty:0
 #: view:website:hr_expense.report_expense
 msgid "Qty"
 msgstr "Кол-во"
@@ -681,7 +675,7 @@ msgid "Review Your Expenses Products"
 msgstr "Проверьте ваши расходы на продукцию"
 
 #. module: hr_expense
-#: code:addons/hr_expense/hr_expense.py:447
+#: code:addons/hr_expense/hr_expense.py:446
 #, python-format
 msgid ""
 "Selected Unit of Measure does not belong to the same category as the product "
@@ -759,8 +753,7 @@ msgstr "Оплатить"
 #. module: hr_expense
 #: view:hr.expense.expense:hr_expense.view_expenses_form
 #: view:hr.expense.line:hr_expense.view_expenses_line_tree
-#: field:hr.expense.line,total_amount:0
-#: view:website:hr_expense.report_expense
+#: field:hr.expense.line,total_amount:0 view:website:hr_expense.report_expense
 msgid "Total"
 msgstr "Итоговая сумма"
 
@@ -776,8 +769,7 @@ msgid "Total Price"
 msgstr "Итоговая цена"
 
 #. module: hr_expense
-#: field:hr.expense.line,unit_amount:0
-#: view:website:hr_expense.report_expense
+#: field:hr.expense.line,unit_amount:0 view:website:hr_expense.report_expense
 msgid "Unit Price"
 msgstr "Цена единицы"
 
@@ -808,8 +800,7 @@ msgid "Validation By"
 msgstr "Проверяющий"
 
 #. module: hr_expense
-#: field:hr.expense.expense,date_valid:0
-#: field:hr.expense.report,date_valid:0
+#: field:hr.expense.expense,date_valid:0 field:hr.expense.report,date_valid:0
 msgid "Validation Date"
 msgstr "Дата утверждения"
 
@@ -840,7 +831,7 @@ msgid "Waiting confirmation"
 msgstr "Ожидает утверждения"
 
 #. module: hr_expense
-#: code:addons/hr_expense/hr_expense.py:447
+#: code:addons/hr_expense/hr_expense.py:446
 #, python-format
 msgid "Warning"
 msgstr "Внимание"
@@ -883,3 +874,6 @@ msgstr ""
 #, python-format
 msgid "You can only delete draft expenses!"
 msgstr "Вы можете удалять только черновики расходов!"
+
+#~ msgid "Create Date"
+#~ msgstr "Дата создания"

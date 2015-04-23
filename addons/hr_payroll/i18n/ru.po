@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-01 20:48+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 02:46+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/hr_payroll/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"hr_payroll/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:14+0000\n"
 
 #. module: hr_payroll
@@ -31,14 +31,14 @@ msgstr "%s (копия)"
 #: help:hr.payslip,state:0
 msgid ""
 "* When the payslip is created the status is 'Draft'.            \n"
-"* If the payslip is under verification, the status is 'Waiting'.             "
-"\n"
+"* If the payslip is under verification, the status is "
+"'Waiting'.             \n"
 "* If the payslip is confirmed then status is set to 'Done'.            \n"
 "* When user cancel payslip the status is 'Rejected'."
 msgstr ""
 "* Когда расчетная ведомость создана, она имеет статус \"Черновик\". ↵ \n"
-"* Если расчетная ведомость находится на проверке, она имеет статус \""
-"Ожидание\". ↵ \n"
+"* Если расчетная ведомость находится на проверке, она имеет статус \"Ожидание"
+"\". ↵ \n"
 "* Если расчетная ведомость подтверждается то, статус меняется на \"Готово\". "
 "↵ \n"
 "* Когда пользователь отменил ведомость, статус меняется на \"Отказано\"."
@@ -77,10 +77,14 @@ msgid "Accounting Information"
 msgstr "Учетная информация"
 
 #. module: hr_payroll
-#: field:hr.payslip.line,active:0
-#: field:hr.salary.rule,active:0
+#: field:hr.payslip.line,active:0 field:hr.salary.rule,active:0
 msgid "Active"
 msgstr "Активный"
+
+#. module: hr_payroll
+#: view:hr.payslip:hr_payroll.view_hr_payslip_form
+msgid "Add an internal note..."
+msgstr ""
 
 #. module: hr_payroll
 #: view:website:hr_payroll.report_payslip
@@ -100,8 +104,7 @@ msgid "Always True"
 msgstr "Всегда верно"
 
 #. module: hr_payroll
-#: field:hr.payslip.input,amount:0
-#: field:hr.payslip.line,amount:0
+#: field:hr.payslip.input,amount:0 field:hr.payslip.line,amount:0
 #: view:website:hr_payroll.report_contributionregister
 #: view:website:hr_payroll.report_payslip
 #: view:website:hr_payroll.report_payslipdetails
@@ -110,8 +113,7 @@ msgstr "Количество"
 
 #. module: hr_payroll
 #: view:hr.payslip.line:hr_payroll.view_hr_payslip_line_filter
-#: field:hr.payslip.line,amount_select:0
-#: field:hr.salary.rule,amount_select:0
+#: field:hr.payslip.line,amount_select:0 field:hr.salary.rule,amount_select:0
 msgid "Amount Type"
 msgstr "Тип суммы"
 
@@ -186,8 +188,7 @@ msgid "Child Rules"
 msgstr "Подчиненные правила"
 
 #. module: hr_payroll
-#: field:hr.payslip.line,child_ids:0
-#: field:hr.salary.rule,child_ids:0
+#: field:hr.payslip.line,child_ids:0 field:hr.salary.rule,child_ids:0
 msgid "Child Salary Rule"
 msgstr "Правило заработной платы для подчиненных"
 
@@ -209,12 +210,9 @@ msgid "Close"
 msgstr "Закрыть"
 
 #. module: hr_payroll
-#: field:hr.payslip.input,code:0
-#: field:hr.payslip.line,code:0
-#: field:hr.payslip.worked_days,code:0
-#: field:hr.rule.input,code:0
-#: field:hr.salary.rule,code:0
-#: field:hr.salary.rule.category,code:0
+#: field:hr.payslip.input,code:0 field:hr.payslip.line,code:0
+#: field:hr.payslip.worked_days,code:0 field:hr.rule.input,code:0
+#: field:hr.salary.rule,code:0 field:hr.salary.rule.category,code:0
 #: view:website:hr_payroll.report_contributionregister
 #: view:website:hr_payroll.report_payslip
 #: view:website:hr_payroll.report_payslipdetails
@@ -228,10 +226,8 @@ msgstr "Компании"
 
 #. module: hr_payroll
 #: field:hr.contribution.register,company_id:0
-#: field:hr.payroll.structure,company_id:0
-#: field:hr.payslip,company_id:0
-#: field:hr.payslip.line,company_id:0
-#: field:hr.salary.rule,company_id:0
+#: field:hr.payroll.structure,company_id:0 field:hr.payslip,company_id:0
+#: field:hr.payslip.line,company_id:0 field:hr.salary.rule,company_id:0
 #: field:hr.salary.rule.category,company_id:0
 msgid "Company"
 msgstr "Компания"
@@ -268,8 +264,7 @@ msgid "Confirm"
 msgstr "Утвердить"
 
 #. module: hr_payroll
-#: field:hr.payslip,contract_id:0
-#: field:hr.payslip.input,contract_id:0
+#: field:hr.payslip,contract_id:0 field:hr.payslip.input,contract_id:0
 #: field:hr.payslip.line,contract_id:0
 #: field:hr.payslip.worked_days,contract_id:0
 #: model:ir.model,name:hr_payroll.model_hr_contract
@@ -283,8 +278,7 @@ msgstr "Авторы"
 
 #. module: hr_payroll
 #: view:hr.payslip.line:hr_payroll.view_hr_payslip_line_filter
-#: field:hr.payslip.line,register_id:0
-#: field:hr.salary.rule,register_id:0
+#: field:hr.payslip.line,register_id:0 field:hr.salary.rule,register_id:0
 #: model:ir.model,name:hr_payroll.model_hr_contribution_register
 msgid "Contribution Register"
 msgstr "Регистрация выплат"
@@ -309,14 +303,10 @@ msgstr "Создание записи в журнале из платежных 
 
 #. module: hr_payroll
 #: field:hr.contribution.register,create_uid:0
-#: field:hr.payroll.structure,create_uid:0
-#: field:hr.payslip,create_uid:0
-#: field:hr.payslip.employees,create_uid:0
-#: field:hr.payslip.input,create_uid:0
-#: field:hr.payslip.line,create_uid:0
-#: field:hr.payslip.run,create_uid:0
-#: field:hr.payslip.worked_days,create_uid:0
-#: field:hr.rule.input,create_uid:0
+#: field:hr.payroll.structure,create_uid:0 field:hr.payslip,create_uid:0
+#: field:hr.payslip.employees,create_uid:0 field:hr.payslip.input,create_uid:0
+#: field:hr.payslip.line,create_uid:0 field:hr.payslip.run,create_uid:0
+#: field:hr.payslip.worked_days,create_uid:0 field:hr.rule.input,create_uid:0
 #: field:hr.salary.rule,create_uid:0
 #: field:hr.salary.rule.category,create_uid:0
 #: field:payslip.lines.contribution.register,create_uid:0
@@ -325,29 +315,24 @@ msgstr "Создано"
 
 #. module: hr_payroll
 #: field:hr.contribution.register,create_date:0
-#: field:hr.payroll.structure,create_date:0
-#: field:hr.payslip,create_date:0
+#: field:hr.payroll.structure,create_date:0 field:hr.payslip,create_date:0
 #: field:hr.payslip.employees,create_date:0
-#: field:hr.payslip.input,create_date:0
-#: field:hr.payslip.line,create_date:0
+#: field:hr.payslip.input,create_date:0 field:hr.payslip.line,create_date:0
 #: field:hr.payslip.run,create_date:0
 #: field:hr.payslip.worked_days,create_date:0
-#: field:hr.rule.input,create_date:0
-#: field:hr.salary.rule,create_date:0
+#: field:hr.rule.input,create_date:0 field:hr.salary.rule,create_date:0
 #: field:hr.salary.rule.category,create_date:0
 #: field:payslip.lines.contribution.register,create_date:0
 msgid "Created on"
 msgstr "Создан"
 
 #. module: hr_payroll
-#: field:hr.payslip,credit_note:0
-#: field:hr.payslip.run,credit_note:0
+#: field:hr.payslip,credit_note:0 field:hr.payslip.run,credit_note:0
 msgid "Credit Note"
 msgstr "Кредитное примечание"
 
 #. module: hr_payroll
-#: field:hr.payslip,date_from:0
-#: field:hr.payslip.run,date_start:0
+#: field:hr.payslip,date_from:0 field:hr.payslip.run,date_start:0
 #: field:payslip.lines.contribution.register,date_from:0
 #: view:website:hr_payroll.report_payslip
 #: view:website:hr_payroll.report_payslipdetails
@@ -360,8 +345,7 @@ msgid "Date From:"
 msgstr "С даты:"
 
 #. module: hr_payroll
-#: field:hr.payslip,date_to:0
-#: field:hr.payslip.run,date_end:0
+#: field:hr.payslip,date_to:0 field:hr.payslip.run,date_end:0
 #: field:payslip.lines.contribution.register,date_to:0
 #: view:website:hr_payroll.report_payslip
 #: view:website:hr_payroll.report_payslipdetails
@@ -389,15 +373,11 @@ msgstr ""
 
 #. module: hr_payroll
 #: view:hr.contribution.register:hr_payroll.hr_contribution_register_form
-#: field:hr.contribution.register,note:0
-#: field:hr.payroll.structure,note:0
-#: field:hr.payslip.input,name:0
-#: field:hr.payslip.line,note:0
-#: field:hr.payslip.worked_days,name:0
-#: field:hr.rule.input,name:0
+#: field:hr.contribution.register,note:0 field:hr.payroll.structure,note:0
+#: field:hr.payslip.input,name:0 field:hr.payslip.line,note:0
+#: field:hr.payslip.worked_days,name:0 field:hr.rule.input,name:0
 #: view:hr.salary.rule:hr_payroll.hr_salary_rule_form
-#: field:hr.salary.rule,note:0
-#: field:hr.salary.rule.category,note:0
+#: field:hr.salary.rule,note:0 field:hr.salary.rule.category,note:0
 msgid "Description"
 msgstr "Описание"
 
@@ -460,8 +440,7 @@ msgid "Email"
 msgstr "Email"
 
 #. module: hr_payroll
-#: field:hr.payslip,employee_id:0
-#: field:hr.payslip.line,employee_id:0
+#: field:hr.payslip,employee_id:0 field:hr.payslip.line,employee_id:0
 #: model:ir.model,name:hr_payroll.model_hr_employee
 msgid "Employee"
 msgstr "Сотрудник"
@@ -502,15 +481,14 @@ msgid "Error!"
 msgstr "Ошибка!"
 
 #. module: hr_payroll
-#: help:hr.payslip.line,register_id:0
-#: help:hr.salary.rule,register_id:0
+#: help:hr.payslip.line,register_id:0 help:hr.salary.rule,register_id:0
 msgid "Eventual third party involved in the salary payment of the employees."
-msgstr "Иногда в выплате заработной платы сотрудникам участвует третья сторона."
+msgstr ""
+"Иногда в выплате заработной платы сотрудникам участвует третья сторона."
 
 #. module: hr_payroll
 #: field:hr.payslip.line,amount_fix:0
-#: selection:hr.payslip.line,amount_select:0
-#: field:hr.salary.rule,amount_fix:0
+#: selection:hr.payslip.line,amount_select:0 field:hr.salary.rule,amount_fix:0
 #: selection:hr.salary.rule,amount_select:0
 msgid "Fixed Amount"
 msgstr "Фиксированная величина"
@@ -550,16 +528,11 @@ msgid "Group By"
 msgstr "Группировать по"
 
 #. module: hr_payroll
-#: field:hr.contribution.register,id:0
-#: field:hr.payroll.structure,id:0
-#: field:hr.payslip,id:0
-#: field:hr.payslip.employees,id:0
-#: field:hr.payslip.input,id:0
-#: field:hr.payslip.line,id:0
-#: field:hr.payslip.run,id:0
-#: field:hr.payslip.worked_days,id:0
-#: field:hr.rule.input,id:0
-#: field:hr.salary.rule,id:0
+#: field:hr.contribution.register,id:0 field:hr.payroll.structure,id:0
+#: field:hr.payslip,id:0 field:hr.payslip.employees,id:0
+#: field:hr.payslip.input,id:0 field:hr.payslip.line,id:0
+#: field:hr.payslip.run,id:0 field:hr.payslip.worked_days,id:0
+#: field:hr.rule.input,id:0 field:hr.salary.rule,id:0
 #: field:hr.salary.rule.category,id:0
 #: field:payslip.lines.contribution.register,id:0
 #: field:report.hr_payroll.report_contributionregister,id:0
@@ -584,8 +557,7 @@ msgstr ""
 "оплаченными ведомостями."
 
 #. module: hr_payroll
-#: help:hr.payslip.line,active:0
-#: help:hr.salary.rule,active:0
+#: help:hr.payslip.line,active:0 help:hr.salary.rule,active:0
 msgid ""
 "If the active field is set to false, it will allow you to hide the salary "
 "rule without removing it."
@@ -625,15 +597,15 @@ msgid ""
 msgstr ""
 "Используется в расчетах для процентов и фиксированной суммы. Например в "
 "Правиле для ваучер на питание зафиксировано количество 1 € за рабочий день, "
-"его количество определяется в выражении типа "
-"worked_days.WORK100.number_of_days."
+"его количество определяется в выражении типа worked_days.WORK100."
+"number_of_days."
 
 #. module: hr_payroll
 #: help:hr.payslip.input,amount:0
 msgid ""
 "It is used in computation. For e.g. A rule for sales having 1% commission of "
-"basic salary for per product can defined in expression like result = "
-"inputs.SALEURO.amount * contract.wage*0.01."
+"basic salary for per product can defined in expression like result = inputs."
+"SALEURO.amount * contract.wage*0.01."
 msgstr ""
 "Используется в вычислении. Для например, Правила для продаж, имеющих 1% "
 "комиссионных базового оклада для каждого программного продукта может "
@@ -641,30 +613,21 @@ msgstr ""
 
 #. module: hr_payroll
 #: field:hr.contribution.register,write_uid:0
-#: field:hr.payroll.structure,write_uid:0
-#: field:hr.payslip,write_uid:0
-#: field:hr.payslip.employees,write_uid:0
-#: field:hr.payslip.input,write_uid:0
-#: field:hr.payslip.line,write_uid:0
-#: field:hr.payslip.run,write_uid:0
-#: field:hr.payslip.worked_days,write_uid:0
-#: field:hr.rule.input,write_uid:0
-#: field:hr.salary.rule,write_uid:0
-#: field:hr.salary.rule.category,write_uid:0
+#: field:hr.payroll.structure,write_uid:0 field:hr.payslip,write_uid:0
+#: field:hr.payslip.employees,write_uid:0 field:hr.payslip.input,write_uid:0
+#: field:hr.payslip.line,write_uid:0 field:hr.payslip.run,write_uid:0
+#: field:hr.payslip.worked_days,write_uid:0 field:hr.rule.input,write_uid:0
+#: field:hr.salary.rule,write_uid:0 field:hr.salary.rule.category,write_uid:0
 #: field:payslip.lines.contribution.register,write_uid:0
 msgid "Last Updated by"
 msgstr "Последний раз обновлено"
 
 #. module: hr_payroll
 #: field:hr.contribution.register,write_date:0
-#: field:hr.payroll.structure,write_date:0
-#: field:hr.payslip,write_date:0
-#: field:hr.payslip.employees,write_date:0
-#: field:hr.payslip.input,write_date:0
-#: field:hr.payslip.line,write_date:0
-#: field:hr.payslip.run,write_date:0
-#: field:hr.payslip.worked_days,write_date:0
-#: field:hr.rule.input,write_date:0
+#: field:hr.payroll.structure,write_date:0 field:hr.payslip,write_date:0
+#: field:hr.payslip.employees,write_date:0 field:hr.payslip.input,write_date:0
+#: field:hr.payslip.line,write_date:0 field:hr.payslip.run,write_date:0
+#: field:hr.payslip.worked_days,write_date:0 field:hr.rule.input,write_date:0
 #: field:hr.salary.rule,write_date:0
 #: field:hr.salary.rule.category,write_date:0
 #: field:payslip.lines.contribution.register,write_date:0
@@ -713,12 +676,9 @@ msgid "Monthly"
 msgstr "Помесячно"
 
 #. module: hr_payroll
-#: field:hr.contribution.register,name:0
-#: field:hr.payroll.structure,name:0
-#: field:hr.payslip.line,name:0
-#: field:hr.payslip.run,name:0
-#: field:hr.salary.rule,name:0
-#: field:hr.salary.rule.category,name:0
+#: field:hr.contribution.register,name:0 field:hr.payroll.structure,name:0
+#: field:hr.payslip.line,name:0 field:hr.payslip.run,name:0
+#: field:hr.salary.rule,name:0 field:hr.salary.rule.category,name:0
 #: view:website:hr_payroll.report_contributionregister
 #: view:website:hr_payroll.report_payslip
 #: view:website:hr_payroll.report_payslipdetails
@@ -769,8 +729,7 @@ msgid "Partner"
 msgstr "Партнер"
 
 #. module: hr_payroll
-#: field:hr.payslip.input,payslip_id:0
-#: field:hr.payslip.line,slip_id:0
+#: field:hr.payslip.input,payslip_id:0 field:hr.payslip.line,slip_id:0
 #: field:hr.payslip.worked_days,payslip_id:0
 #: model:ir.model,name:hr_payroll.model_hr_payslip
 #: view:website:hr_payroll.report_payslip
@@ -868,8 +827,7 @@ msgid "Payslip Line"
 msgstr "Строка расчетного листка"
 
 #. module: hr_payroll
-#: view:hr.payslip:hr_payroll.view_hr_payslip_form
-#: field:hr.payslip,line_ids:0
+#: view:hr.payslip:hr_payroll.view_hr_payslip_form field:hr.payslip,line_ids:0
 #: view:hr.payslip.line:hr_payroll.view_hr_payslip_line_filter
 #: model:ir.actions.act_window,name:hr_payroll.act_contribution_reg_payslip_lines
 msgid "Payslip Lines"
@@ -893,8 +851,7 @@ msgstr "Рабочие дни платежной ведомости"
 
 #. module: hr_payroll
 #: view:hr.employee:hr_payroll.payroll_hr_employee_view_form
-#: field:hr.employee,payslip_count:0
-#: field:hr.employee,slip_ids:0
+#: field:hr.employee,payslip_count:0 field:hr.employee,slip_ids:0
 #: view:hr.payslip:hr_payroll.view_hr_payslip_filter
 #: view:hr.payslip:hr_payroll.view_hr_payslip_tree
 #: view:hr.payslip.run:hr_payroll.hr_payslip_run_form
@@ -962,8 +919,7 @@ msgid "Python Expression"
 msgstr "Выражение для Python"
 
 #. module: hr_payroll
-#: field:hr.payslip.line,quantity:0
-#: field:hr.salary.rule,quantity:0
+#: field:hr.payslip.line,quantity:0 field:hr.salary.rule,quantity:0
 msgid "Quantity"
 msgstr "Количество"
 
@@ -1001,8 +957,7 @@ msgid "Rate (%)"
 msgstr "Ставка (%)"
 
 #. module: hr_payroll
-#: field:hr.payroll.structure,code:0
-#: field:hr.payslip,number:0
+#: field:hr.payroll.structure,code:0 field:hr.payslip,number:0
 #: view:website:hr_payroll.report_payslip
 #: view:website:hr_payroll.report_payslipdetails
 msgid "Reference"
@@ -1153,10 +1108,8 @@ msgid "Semi-annually"
 msgstr "Раз в полугодие"
 
 #. module: hr_payroll
-#: field:hr.payslip.input,sequence:0
-#: field:hr.payslip.line,sequence:0
-#: field:hr.payslip.worked_days,sequence:0
-#: field:hr.salary.rule,sequence:0
+#: field:hr.payslip.input,sequence:0 field:hr.payslip.line,sequence:0
+#: field:hr.payslip.worked_days,sequence:0 field:hr.salary.rule,sequence:0
 msgid "Sequence"
 msgstr "Последовательность"
 
@@ -1172,8 +1125,7 @@ msgid "States"
 msgstr "Состояния"
 
 #. module: hr_payroll
-#: field:hr.payslip,state:0
-#: field:hr.payslip.run,state:0
+#: field:hr.payslip,state:0 field:hr.payslip.run,state:0
 msgid "Status"
 msgstr "Статус"
 
@@ -1188,8 +1140,7 @@ msgid "Sum of all current contract's wage of employee."
 msgstr "Сумма всех текущих заработных плат сотрудников."
 
 #. module: hr_payroll
-#: help:hr.payslip.line,code:0
-#: help:hr.salary.rule,code:0
+#: help:hr.payslip.line,code:0 help:hr.salary.rule,code:0
 msgid ""
 "The code of salary rules can be used as reference in computation of other "
 "rules. In that case, it is case sensitive."
@@ -1198,15 +1149,13 @@ msgstr ""
 "выведении других правил. В таком случае, он чувствителен."
 
 #. module: hr_payroll
-#: help:hr.payslip.input,code:0
-#: help:hr.payslip.worked_days,code:0
+#: help:hr.payslip.input,code:0 help:hr.payslip.worked_days,code:0
 #: help:hr.rule.input,code:0
 msgid "The code that can be used in the salary rules"
 msgstr "Этот код может быть использован в правилах начисления заработных плат"
 
 #. module: hr_payroll
-#: help:hr.payslip.line,amount_select:0
-#: help:hr.salary.rule,amount_select:0
+#: help:hr.payslip.line,amount_select:0 help:hr.salary.rule,amount_select:0
 msgid "The computation method for the rule amount."
 msgstr "Метод вычисления для выведения правила."
 
@@ -1269,8 +1218,7 @@ msgid "Total Working Days"
 msgstr "Общие рабочие дни"
 
 #. module: hr_payroll
-#: help:hr.payslip.line,sequence:0
-#: help:hr.salary.rule,sequence:0
+#: help:hr.payslip.line,sequence:0 help:hr.salary.rule,sequence:0
 msgid "Use to arrange calculation sequence"
 msgstr "Используется для организации последовательности вычислений"
 
@@ -1333,8 +1281,8 @@ msgstr ""
 #, python-format
 msgid "Wrong python condition defined for salary rule %s (%s)."
 msgstr ""
-"Неверное условие для  python, определенное для правила начисления зарплаты %"
-"s (%s)."
+"Неверное условие для  python, определенное для правила начисления зарплаты "
+"%s (%s)."
 
 #. module: hr_payroll
 #: code:addons/hr_payroll/hr_payroll.py:851
@@ -1364,6 +1312,11 @@ msgstr ""
 #, python-format
 msgid "You must select employee(s) to generate payslip(s)."
 msgstr "Вы должны выбрать сотрудника(ов) чтобы создать расчетный листок(ки)."
+
+#. module: hr_payroll
+#: view:payslip.lines.contribution.register:hr_payroll.view_payslip_lines_contribution_register
+msgid "or"
+msgstr ""
 
 #. module: hr_payroll
 #: help:hr.payslip.line,amount_percentage_base:0
