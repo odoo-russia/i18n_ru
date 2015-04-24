@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-01 20:46+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 02:14+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/hr_evaluation/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"hr_evaluation/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:12+0000\n"
 
 #. module: hr_evaluation
@@ -194,8 +194,8 @@ msgstr ""
 "специальном поле.\n"
 "</li><li>Работник может выбрать, чтобы предложить комментарии или объяснения "
 "в отношении завершенного оценивания.\n"
-"</li><li>Руководитель отправляет форму в отдел кадров в Индии и в "
-"Бельгии</li></ul>"
+"</li><li>Руководитель отправляет форму в отдел кадров в Индии и в Бельгии</"
+"li></ul>"
 
 #. module: hr_evaluation
 #: model:ir.actions.act_window,help:hr_evaluation.open_view_hr_evaluation_tree
@@ -245,8 +245,8 @@ msgstr ""
 "                Нажмите чтобы создать  новый запрос на собеседование "
 "относительно                            персонального оценивания.↵\n"
 "              </p><p>↵\n"
-"                Запросы на собеседование обычно создаются Odoo автоматически↵"
-"\n"
+"                Запросы на собеседование обычно создаются Odoo "
+"автоматически↵\n"
 "                согласно оценочному плану сотрудника. Периодически каждый "
 "пользователь↵\n"
 "                автоматически получает письма и запросы с просьбой оценить "
@@ -483,8 +483,7 @@ msgstr "Этапы оценивания"
 #: view:hr_evaluation.plan:hr_evaluation.view_hr_evaluation_plan_form
 #: view:hr_evaluation.plan:hr_evaluation.view_hr_evaluation_plan_search
 #: view:hr_evaluation.plan:hr_evaluation.view_hr_evaluation_plan_tree
-#: field:hr_evaluation.plan,name:0
-#: field:hr_evaluation.plan.phase,plan_id:0
+#: field:hr_evaluation.plan,name:0 field:hr_evaluation.plan.phase,plan_id:0
 #: model:ir.model,name:hr_evaluation.model_hr_evaluation_plan
 msgid "Appraisal Plan"
 msgstr "План оценивания"
@@ -609,6 +608,11 @@ msgstr ""
 "были завершены."
 
 #. module: hr_evaluation
+#: field:hr.evaluation.report,closed:0
+msgid "Close Date"
+msgstr "Дата закрытия"
+
+#. module: hr_evaluation
 #: model:survey.label,value:hr_evaluation.arow_3_1_9
 msgid ""
 "Communication skills (written & verbally): clearness, concision, exactitude"
@@ -667,8 +671,8 @@ msgstr "Создан"
 
 #. module: hr_evaluation
 #: view:hr.evaluation.report:hr_evaluation.view_evaluation_report_search
-msgid "Creation Date"
-msgstr "Дата создания"
+msgid "Creation Month"
+msgstr "Месяц создания"
 
 #. module: hr_evaluation
 #: model:survey.label,value:hr_evaluation.arow_3_1_14
@@ -972,10 +976,8 @@ msgid "I'm efficient at work and my achievements are successful"
 msgstr "Я эффективен в своей работе и мои достижения успешны"
 
 #. module: hr_evaluation
-#: field:hr.evaluation.interview,id:0
-#: field:hr.evaluation.report,id:0
-#: field:hr_evaluation.evaluation,id:0
-#: field:hr_evaluation.plan,id:0
+#: field:hr.evaluation.interview,id:0 field:hr.evaluation.report,id:0
+#: field:hr_evaluation.evaluation,id:0 field:hr_evaluation.plan,id:0
 #: field:hr_evaluation.plan.phase,id:0
 msgid "ID"
 msgstr "ID"
@@ -1172,6 +1174,11 @@ msgid "Miscellaneous"
 msgstr "Прочее"
 
 #. module: hr_evaluation
+#: view:hr.evaluation.report:hr_evaluation.view_evaluation_report_search
+msgid "Month"
+msgstr "Месяц"
+
+#. module: hr_evaluation
 #: model:survey.label,value:hr_evaluation.oprow_2_5_2
 msgid ""
 "My best achievements have been communicated to the community, internally or "
@@ -1335,8 +1342,8 @@ msgstr "Относительно "
 
 #. module: hr_evaluation
 #: field:hr.evaluation.report,request_id:0
-msgid "Request_id"
-msgstr "Идентификатор запроса"
+msgid "Request ID"
+msgstr "ID запроса"
 
 #. module: hr_evaluation
 #: view:hr_evaluation.evaluation:hr_evaluation.view_hr_evaluation_form
@@ -1640,7 +1647,7 @@ msgstr "Ожидание оценки"
 
 #. module: hr_evaluation
 #: code:addons/hr_evaluation/hr_evaluation.py:239
-#: code:addons/hr_evaluation/hr_evaluation.py:338
+#: code:addons/hr_evaluation/hr_evaluation.py:339
 #, python-format
 msgid "Warning!"
 msgstr "Внимание!"
@@ -1682,12 +1689,10 @@ msgstr ""
 "заполнены."
 
 #. module: hr_evaluation
-#: code:addons/hr_evaluation/hr_evaluation.py:338
+#: code:addons/hr_evaluation/hr_evaluation.py:339
 #, python-format
 msgid "You cannot start evaluation without Appraisal."
 msgstr "Вы не можете начать оценку без Оценивания."
 
-#. module: hr_evaluation
-#: field:hr.evaluation.report,closed:0
-msgid "closed"
-msgstr "закрыто"
+#~ msgid "closed"
+#~ msgstr "закрыто"

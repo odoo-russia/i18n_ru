@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-01 02:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 02:12+0700\n"
 "Last-Translator: user2 <user2@starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/hr_contract/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"hr_contract/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:11+0000\n"
 
 #. module: hr_contract
@@ -56,8 +56,7 @@ msgid "Contract"
 msgstr "Договор"
 
 #. module: hr_contract
-#: view:hr.contract:hr_contract.hr_contract_view_form
-#: field:hr.contract,name:0
+#: view:hr.contract:hr_contract.hr_contract_view_form field:hr.contract,name:0
 msgid "Contract Reference"
 msgstr "Ссылка на договор"
 
@@ -82,8 +81,7 @@ msgstr "Типы договоров"
 #: view:hr.contract:hr_contract.hr_contract_view_search
 #: view:hr.contract:hr_contract.hr_contract_view_tree
 #: view:hr.employee:hr_contract.hr_hr_employee_view_form2
-#: field:hr.employee,contract_ids:0
-#: field:hr.employee,contracts_count:0
+#: field:hr.employee,contract_ids:0 field:hr.employee,contracts_count:0
 #: model:ir.actions.act_window,name:hr_contract.act_hr_employee_2_hr_contract
 #: model:ir.actions.act_window,name:hr_contract.action_hr_contract
 #: model:ir.ui.menu,name:hr_contract.hr_menu_contract
@@ -91,14 +89,12 @@ msgid "Contracts"
 msgstr "Договоры"
 
 #. module: hr_contract
-#: field:hr.contract,create_uid:0
-#: field:hr.contract.type,create_uid:0
+#: field:hr.contract,create_uid:0 field:hr.contract.type,create_uid:0
 msgid "Created by"
 msgstr "Создано"
 
 #. module: hr_contract
-#: field:hr.contract,create_date:0
-#: field:hr.contract.type,create_date:0
+#: field:hr.contract,create_date:0 field:hr.contract.type,create_date:0
 msgid "Created on"
 msgstr "Создан"
 
@@ -142,8 +138,7 @@ msgid "Home-Work Dist."
 msgstr "удал. надомная работа."
 
 #. module: hr_contract
-#: field:hr.contract,id:0
-#: field:hr.contract.type,id:0
+#: field:hr.contract,id:0 field:hr.contract.type,id:0
 msgid "ID"
 msgstr "ID"
 
@@ -173,14 +168,12 @@ msgid "Job Title"
 msgstr "Наименование должности"
 
 #. module: hr_contract
-#: field:hr.contract,write_uid:0
-#: field:hr.contract.type,write_uid:0
+#: field:hr.contract,write_uid:0 field:hr.contract.type,write_uid:0
 msgid "Last Updated by"
 msgstr "Последний раз обновлено"
 
 #. module: hr_contract
-#: field:hr.contract,write_date:0
-#: field:hr.contract.type,write_date:0
+#: field:hr.contract,write_date:0 field:hr.contract.type,write_date:0
 msgid "Last Updated on"
 msgstr "Последний раз обновлено"
 

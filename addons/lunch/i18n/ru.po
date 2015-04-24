@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-16 23:05+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 03:06+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/lunch/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"lunch/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:23+0000\n"
 
 #. module: lunch
@@ -79,8 +79,8 @@ msgid ""
 "            </p>\n"
 "              <p>\n"
 "                A cashmove can either be an expense or a payment.<br/>\n"
-"                An expense is automatically created at the order "
-"receipt.<br/>\n"
+"                An expense is automatically created at the order receipt.<br/"
+">\n"
 "                A payment represents the employee reimbursement to the "
 "company.\n"
 "              </p>\n"
@@ -121,15 +121,12 @@ msgid ""
 "date.\n"
 "              </p>\n"
 "              <p>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/terp-call-start.png\"/> to announce "
-"that the order is ordered <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-apply.png\"/> to announce that "
-"the order is received <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-cancel.png\"/> red X to announce "
-"that the order isn't available\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"terp-call-start.png\"/> to announce that the order is ordered <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-apply.png\"/> to announce that the order is received <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-cancel.png\"/> red X to announce that the order isn't available\n"
 "              </p>\n"
 "            "
 msgstr ""
@@ -141,15 +138,12 @@ msgid ""
 "                Here you can see today's orders grouped by suppliers.\n"
 "              </p>\n"
 "              <p>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/terp-call-start.png\"/> to announce "
-"that the order is ordered <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-apply.png\"/> to announce that "
-"the order is received <br/>\n"
-"                - Click on the <img "
-"src=\"../../../web/static/src/img/icons/gtk-cancel.png\"/> to announce that "
-"the order isn't available\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"terp-call-start.png\"/> to announce that the order is ordered <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-apply.png\"/> to announce that the order is received <br/>\n"
+"                - Click on the <img src=\"../../../web/static/src/img/icons/"
+"gtk-cancel.png\"/> to announce that the order isn't available\n"
 "              </p>\n"
 "            "
 msgstr ""
@@ -190,8 +184,7 @@ msgstr ""
 
 #. module: lunch
 #: model:ir.actions.act_window,name:lunch.action_lunch_alert
-#: model:ir.ui.menu,name:lunch.menu_lunch_alert
-#: field:lunch.order,alerts:0
+#: model:ir.ui.menu,name:lunch.menu_lunch_alert field:lunch.order,alerts:0
 msgid "Alerts"
 msgstr ""
 
@@ -281,8 +274,7 @@ msgid "Cash Move"
 msgstr "Движение средств"
 
 #. module: lunch
-#: field:lunch.product,category_id:0
-#: field:lunch.product.category,name:0
+#: field:lunch.product,category_id:0 field:lunch.product.category,name:0
 msgid "Category"
 msgstr "Категория"
 
@@ -313,25 +305,18 @@ msgid "Control Suppliers"
 msgstr ""
 
 #. module: lunch
-#: field:lunch.alert,create_uid:0
-#: field:lunch.cancel,create_uid:0
-#: field:lunch.cashmove,create_uid:0
-#: field:lunch.order,create_uid:0
-#: field:lunch.order.line,create_uid:0
-#: field:lunch.order.order,create_uid:0
-#: field:lunch.product,create_uid:0
-#: field:lunch.product.category,create_uid:0
+#: field:lunch.alert,create_uid:0 field:lunch.cancel,create_uid:0
+#: field:lunch.cashmove,create_uid:0 field:lunch.order,create_uid:0
+#: field:lunch.order.line,create_uid:0 field:lunch.order.order,create_uid:0
+#: field:lunch.product,create_uid:0 field:lunch.product.category,create_uid:0
 #: field:lunch.validation,create_uid:0
 msgid "Created by"
 msgstr "Создано"
 
 #. module: lunch
-#: field:lunch.alert,create_date:0
-#: field:lunch.cancel,create_date:0
-#: field:lunch.cashmove,create_date:0
-#: field:lunch.order,create_date:0
-#: field:lunch.order.line,create_date:0
-#: field:lunch.order.order,create_date:0
+#: field:lunch.alert,create_date:0 field:lunch.cancel,create_date:0
+#: field:lunch.cashmove,create_date:0 field:lunch.order,create_date:0
+#: field:lunch.order.line,create_date:0 field:lunch.order.order,create_date:0
 #: field:lunch.product,create_date:0
 #: field:lunch.product.category,create_date:0
 #: field:lunch.validation,create_date:0
@@ -339,8 +324,7 @@ msgid "Created on"
 msgstr "Создан"
 
 #. module: lunch
-#: field:lunch.cashmove,date:0
-#: field:lunch.order,date:0
+#: field:lunch.cashmove,date:0 field:lunch.order,date:0
 #: field:lunch.order.line,date:0
 msgid "Date"
 msgstr "Дата"
@@ -351,8 +335,7 @@ msgid "Date Order"
 msgstr "Дата заказа"
 
 #. module: lunch
-#: field:lunch.alert,specific_day:0
-#: field:report.lunch.order.line,day:0
+#: field:lunch.alert,specific_day:0 field:report.lunch.order.line,day:0
 msgid "Day"
 msgstr "День"
 
@@ -362,8 +345,7 @@ msgid "December"
 msgstr "Декабрь"
 
 #. module: lunch
-#: field:lunch.cashmove,description:0
-#: field:lunch.product,description:0
+#: field:lunch.cashmove,description:0 field:lunch.product,description:0
 #: view:website:lunch.report_lunchorder
 msgid "Description"
 msgstr "Описание"
@@ -418,15 +400,10 @@ msgid ""
 msgstr ""
 
 #. module: lunch
-#: field:lunch.alert,id:0
-#: field:lunch.cancel,id:0
-#: field:lunch.cashmove,id:0
-#: field:lunch.order,id:0
-#: field:lunch.order.line,id:0
-#: field:lunch.order.order,id:0
-#: field:lunch.product,id:0
-#: field:lunch.product.category,id:0
-#: field:lunch.validation,id:0
+#: field:lunch.alert,id:0 field:lunch.cancel,id:0 field:lunch.cashmove,id:0
+#: field:lunch.order,id:0 field:lunch.order.line,id:0
+#: field:lunch.order.order,id:0 field:lunch.product,id:0
+#: field:lunch.product.category,id:0 field:lunch.validation,id:0
 #: field:report.lunch.order.line,id:0
 #: field:report.lunch.report_lunchorder,id:0
 msgid "ID"
@@ -453,27 +430,19 @@ msgid "June"
 msgstr "Июнь"
 
 #. module: lunch
-#: field:lunch.alert,write_uid:0
-#: field:lunch.cancel,write_uid:0
-#: field:lunch.cashmove,write_uid:0
-#: field:lunch.order,write_uid:0
-#: field:lunch.order.line,write_uid:0
-#: field:lunch.order.order,write_uid:0
-#: field:lunch.product,write_uid:0
-#: field:lunch.product.category,write_uid:0
+#: field:lunch.alert,write_uid:0 field:lunch.cancel,write_uid:0
+#: field:lunch.cashmove,write_uid:0 field:lunch.order,write_uid:0
+#: field:lunch.order.line,write_uid:0 field:lunch.order.order,write_uid:0
+#: field:lunch.product,write_uid:0 field:lunch.product.category,write_uid:0
 #: field:lunch.validation,write_uid:0
 msgid "Last Updated by"
 msgstr "Последний раз обновлено"
 
 #. module: lunch
-#: field:lunch.alert,write_date:0
-#: field:lunch.cancel,write_date:0
-#: field:lunch.cashmove,write_date:0
-#: field:lunch.order,write_date:0
-#: field:lunch.order.line,write_date:0
-#: field:lunch.order.order,write_date:0
-#: field:lunch.product,write_date:0
-#: field:lunch.product.category,write_date:0
+#: field:lunch.alert,write_date:0 field:lunch.cancel,write_date:0
+#: field:lunch.cashmove,write_date:0 field:lunch.order,write_date:0
+#: field:lunch.order.line,write_date:0 field:lunch.order.order,write_date:0
+#: field:lunch.product,write_date:0 field:lunch.product.category,write_date:0
 #: field:lunch.validation,write_date:0
 msgid "Last Updated on"
 msgstr "Последний раз обновлено"
@@ -525,8 +494,7 @@ msgid "May"
 msgstr "Май"
 
 #. module: lunch
-#: view:lunch.alert:lunch.alert_form_view
-#: field:lunch.alert,message:0
+#: view:lunch.alert:lunch.alert_form_view field:lunch.alert,message:0
 msgid "Message"
 msgstr "Сообщение"
 
@@ -556,8 +524,7 @@ msgid "Name/Date"
 msgstr "Название/Дата"
 
 #. module: lunch
-#: selection:lunch.order,state:0
-#: selection:lunch.order.line,state:0
+#: selection:lunch.order,state:0 selection:lunch.order.line,state:0
 msgid "New"
 msgstr "Новый"
 
@@ -573,8 +540,7 @@ msgid "Not Received"
 msgstr ""
 
 #. module: lunch
-#: field:lunch.order.line,note:0
-#: field:report.lunch.order.line,note:0
+#: field:lunch.order.line,note:0 field:report.lunch.order.line,note:0
 msgid "Note"
 msgstr "Примечание"
 
@@ -594,11 +560,9 @@ msgid "Once a meal is received a new cash move is created for the employee."
 msgstr ""
 
 #. module: lunch
-#: field:lunch.cashmove,order_id:0
-#: selection:lunch.cashmove,state:0
+#: field:lunch.cashmove,order_id:0 selection:lunch.cashmove,state:0
 #: view:lunch.order.line:lunch.orders_order_lines_tree_view
-#: field:lunch.order.line,order_id:0
-#: view:website:lunch.report_lunchorder
+#: field:lunch.order.line,order_id:0 view:website:lunch.report_lunchorder
 msgid "Order"
 msgstr "Заказ"
 
@@ -672,14 +636,12 @@ msgid "Previous Orders"
 msgstr ""
 
 #. module: lunch
-#: field:lunch.order.line,price:0
-#: field:lunch.product,price:0
+#: field:lunch.order.line,price:0 field:lunch.product,price:0
 msgid "Price"
 msgstr "Цена"
 
 #. module: lunch
-#: field:lunch.order.line,product_id:0
-#: field:lunch.product,name:0
+#: field:lunch.order.line,product_id:0 field:lunch.product,name:0
 msgid "Product"
 msgstr "Товар"
 
@@ -781,8 +743,7 @@ msgid "Specific Day"
 msgstr ""
 
 #. module: lunch
-#: field:lunch.order,state:0
-#: field:lunch.order.line,state:0
+#: field:lunch.order,state:0 field:lunch.order.line,state:0
 msgid "Status"
 msgstr "Статус"
 
@@ -792,8 +753,7 @@ msgid "Sunday"
 msgstr "Воскресенье"
 
 #. module: lunch
-#: field:lunch.order.line,supplier:0
-#: field:lunch.product,supplier:0
+#: field:lunch.order.line,supplier:0 field:lunch.product,supplier:0
 msgid "Supplier"
 msgstr "Поставщик"
 
@@ -826,8 +786,7 @@ msgstr ""
 #. module: lunch
 #: view:lunch.cashmove:lunch.casmove_tree
 #: view:lunch.cashmove:lunch.casmove_tree_view
-#: view:lunch.order:lunch.orders_tree_view
-#: field:lunch.order,total:0
+#: view:lunch.order:lunch.orders_tree_view field:lunch.order,total:0
 #: view:lunch.order.line:lunch.orders_order_lines_tree_view
 #: view:website:lunch.report_lunchorder
 msgid "Total"
@@ -855,8 +814,7 @@ msgid "User"
 msgstr "Пользователь"
 
 #. module: lunch
-#: field:lunch.cashmove,user_id:0
-#: field:lunch.order,user_id:0
+#: field:lunch.cashmove,user_id:0 field:lunch.order,user_id:0
 #: field:report.lunch.order.line,user_id:0
 msgid "User Name"
 msgstr "Имя пользователя"
@@ -968,6 +926,13 @@ msgstr ""
 #. module: lunch
 #: model:ir.model,name:lunch.model_lunch_validation
 msgid "lunch validation for order"
+msgstr ""
+
+#. module: lunch
+#: view:lunch.cancel:lunch.cancel_order_lines_view
+#: view:lunch.order.order:lunch.order_order_lines_view
+#: view:lunch.validation:lunch.validate_order_lines_view
+msgid "or"
 msgstr ""
 
 #. module: lunch

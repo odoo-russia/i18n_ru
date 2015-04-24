@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-01 02:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 00:09+0700\n"
 "Last-Translator: user2 <user2@starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/board/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"board/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 06:58+0000\n"
 
 #. module: board
@@ -101,7 +101,7 @@ msgstr "Название панели"
 
 #. module: board
 #. openerp-web
-#: code:addons/board/static/src/js/dashboard.js:370
+#: code:addons/board/static/src/js/dashboard.js:374
 #, python-format
 msgid "Can't find dashboard action"
 msgstr "Не возможно найти действие доски"
@@ -134,7 +134,7 @@ msgstr "Выбрать вид панели"
 
 #. module: board
 #. openerp-web
-#: code:addons/board/static/src/js/dashboard.js:402
+#: code:addons/board/static/src/js/dashboard.js:406
 #, python-format
 msgid "Could not add filter to dashboard"
 msgstr "Не возможно добавить фильтр к доске"
@@ -174,14 +174,13 @@ msgstr "Редактировать макет"
 
 #. module: board
 #. openerp-web
-#: code:addons/board/static/src/js/dashboard.js:405
+#: code:addons/board/static/src/js/dashboard.js:409
 #, python-format
 msgid "Filter added to dashboard"
 msgstr "Фильтр добавлен к доске"
 
 #. module: board
-#: field:board.board,id:0
-#: field:board.create,id:0
+#: field:board.board,id:0 field:board.create,id:0
 msgid "ID"
 msgstr "ID"
 
@@ -227,3 +226,8 @@ msgstr "Обнулить Макет..."
 #, python-format
 msgid "Title of new dashboard item"
 msgstr "Заголовок новой панели"
+
+#. module: board
+#: view:board.create:board.view_board_create
+msgid "or"
+msgstr ""

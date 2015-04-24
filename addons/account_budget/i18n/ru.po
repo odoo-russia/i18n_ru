@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-08 18:18+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-23 22:00+0700\n"
 "Last-Translator: user2 <user2@starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/account_budget/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"account_budget/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 06:50+0000\n"
 
 #. module: account_budget
@@ -181,8 +181,7 @@ msgid "Cancelled"
 msgstr "Отменено"
 
 #. module: account_budget
-#: field:account.budget.post,code:0
-#: field:crossovered.budget,code:0
+#: field:account.budget.post,code:0 field:crossovered.budget,code:0
 msgid "Code"
 msgstr "Код"
 
@@ -266,8 +265,7 @@ msgid "Duration"
 msgstr "Длительность"
 
 #. module: account_budget
-#: field:crossovered.budget,date_to:0
-#: field:crossovered.budget.lines,date_to:0
+#: field:crossovered.budget,date_to:0 field:crossovered.budget.lines,date_to:0
 msgid "End Date"
 msgstr "Конечная дата"
 
@@ -280,7 +278,7 @@ msgid "End of period"
 msgstr "Конец периода"
 
 #. module: account_budget
-#: code:addons/account_budget/account_budget.py:118
+#: code:addons/account_budget/account_budget.py:124
 #, python-format
 msgid "Error!"
 msgstr "Ошибка!"
@@ -289,10 +287,8 @@ msgstr "Ошибка!"
 #: field:account.budget.analytic,id:0
 #: field:account.budget.crossvered.report,id:0
 #: field:account.budget.crossvered.summary.report,id:0
-#: field:account.budget.post,id:0
-#: field:account.budget.report,id:0
-#: field:crossovered.budget,id:0
-#: field:crossovered.budget.lines,id:0
+#: field:account.budget.post,id:0 field:account.budget.report,id:0
+#: field:crossovered.budget,id:0 field:crossovered.budget.lines,id:0
 #: field:report.account_budget.report_analyticaccountbudget,id:0
 #: field:report.account_budget.report_budget,id:0
 #: field:report.account_budget.report_crossoveredbudget,id:0
@@ -322,8 +318,7 @@ msgid "Last Updated on"
 msgstr "Последний раз обновлено"
 
 #. module: account_budget
-#: field:account.budget.post,name:0
-#: field:crossovered.budget,name:0
+#: field:account.budget.post,name:0 field:crossovered.budget,name:0
 msgid "Name"
 msgstr "Имя"
 
@@ -436,7 +431,7 @@ msgid "Status"
 msgstr "Статус"
 
 #. module: account_budget
-#: code:addons/account_budget/account_budget.py:118
+#: code:addons/account_budget/account_budget.py:124
 #, python-format
 msgid "The Budget '%s' has no accounts!"
 msgstr "Бюджет '%s' не имеет счетов !"
@@ -497,3 +492,23 @@ msgstr "Проверить пользователя"
 #: selection:crossovered.budget,state:0
 msgid "Validated"
 msgstr "Проверено"
+
+#. module: account_budget
+#: view:website:account_budget.report_budget
+msgid "at"
+msgstr ""
+
+#. module: account_budget
+#: view:account.budget.analytic:account_budget.account_budget_analytic_view
+#: view:account.budget.crossvered.report:account_budget.account_budget_crossvered_report_view
+#: view:account.budget.crossvered.summary.report:account_budget.account_budget_crossvered_summary_report_view
+#: view:account.budget.report:account_budget.account_budget_report_view
+msgid "or"
+msgstr ""
+
+#. module: account_budget
+#: view:website:account_budget.report_analyticaccountbudget
+#: view:website:account_budget.report_budget
+#: view:website:account_budget.report_crossoveredbudget
+msgid "to"
+msgstr ""

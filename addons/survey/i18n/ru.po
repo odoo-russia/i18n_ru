@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-22 23:19+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 06:23+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "survey/ru/>\n"
@@ -18,31 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:57+0000\n"
-
-#. module: survey
-#: view:survey.page:survey.survey_page_tree
-msgid "#Questions"
-msgstr "#Вопросы"
-
-#. module: survey
-#: code:addons/survey/survey.py:246 code:addons/survey/survey.py:541
-#: code:addons/survey/survey.py:660
-#, python-format
-msgid "%s (copy)"
-msgstr "%s (копия)"
-
-#. module: survey
-#: view:website:survey.page
-msgid "&times;"
-msgstr "&times;"
 
 #. module: survey
 #: model:email.template,body_html:survey.email_template_survey
 msgid ""
-"<div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
+"\n"
+"                \n"
+"                <div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, "
+"Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
 "                    <p>Hello,</p>\n"
 "                    <p>We are conducting a survey, and your response would "
 "be appreciated.</p>\n"
@@ -53,8 +38,10 @@ msgid ""
 "                \n"
 "            "
 msgstr ""
-"<div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, Verdana, sans-"
-"serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
+"\n"
+"                \n"
+"               <div style=\"font-family: 'Lucida Grande', Ubuntu, Arial, "
+"Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); \">\n"
 "                    <p>Здравствуйте,</p>\n"
 "                    <p>Мы проводим соцопрос, и ваш ответ для нас очень важен."
 "</p>\n"
@@ -64,6 +51,23 @@ msgstr ""
 "                </div>\n"
 "                \n"
 "            "
+
+#. module: survey
+#: view:survey.page:survey.survey_page_tree
+msgid "#Questions"
+msgstr "#Вопросы"
+
+#. module: survey
+#: code:addons/survey/survey.py:246 code:addons/survey/survey.py:543
+#: code:addons/survey/survey.py:662
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (копия)"
+
+#. module: survey
+#: view:website:survey.page
+msgid "&times;"
+msgstr "&times;"
 
 #. module: survey
 #: model:ir.actions.act_window,help:survey.action_survey_form
@@ -231,7 +235,7 @@ msgstr "Вступительный текст к вашей странице"
 
 #. module: survey
 #: view:survey.survey:survey.survey_kanban
-msgid "Analyse Answers"
+msgid "Analyze Answers"
 msgstr "Анализировать ответы"
 
 #. module: survey
@@ -628,7 +632,7 @@ msgid "Error message"
 msgstr "Сообщение об ошибке"
 
 #. module: survey
-#: code:addons/survey/survey.py:437
+#: code:addons/survey/survey.py:439
 #, python-format
 msgid "Error!"
 msgstr "Ошибка!"
@@ -804,7 +808,7 @@ msgid "If closed, people won't be able to answer to surveys in this column."
 msgstr "Если закрыто, люди не смогут ответить на соцопросы в этой рубрике."
 
 #. module: survey
-#: code:addons/survey/survey.py:647
+#: code:addons/survey/survey.py:649
 #: model:survey.question,comments_message:survey.feedback_1_1
 #: model:survey.question,comments_message:survey.feedback_1_2
 #: model:survey.question,comments_message:survey.feedback_2_1
@@ -1385,7 +1389,7 @@ msgstr "Вопросы для разработчиков"
 
 #. module: survey
 #: field:survey.survey,quizz_mode:0
-msgid "Quizz mode"
+msgid "Quiz mode"
 msgstr "Режим викторины"
 
 #. module: survey
@@ -1644,6 +1648,11 @@ msgid "Suggestion"
 msgstr "Предложение"
 
 #. module: survey
+#: view:website:survey.result_number
+msgid "Sum"
+msgstr "Резюме"
+
+#. module: survey
 #: field:survey.survey,message_summary:0
 msgid "Summary"
 msgstr "Резюме"
@@ -1811,7 +1820,7 @@ msgid "The answer must be in the right type"
 msgstr "Ответ должен быть правильно напечатан"
 
 #. module: survey
-#: code:addons/survey/survey.py:645
+#: code:addons/survey/survey.py:647
 #: model:survey.question,validation_error_msg:survey.feedback_1_1
 #: model:survey.question,validation_error_msg:survey.feedback_1_2
 #: model:survey.question,validation_error_msg:survey.feedback_2_1
@@ -1895,19 +1904,19 @@ msgid "They help new users to understand Odoo"
 msgstr "Они помогают новым пользователям разобраться в Odoo"
 
 #. module: survey
-#: code:addons/survey/survey.py:698
+#: code:addons/survey/survey.py:700
 #, python-format
 msgid "This answer must be an email address"
 msgstr "Этим ответом должен быть адрес электронной почты"
 
 #. module: survey
-#: code:addons/survey/survey.py:740
+#: code:addons/survey/survey.py:742
 #, python-format
 msgid "This is not a date/time"
 msgstr "Это не дата/время"
 
 #. module: survey
-#: code:addons/survey/survey.py:717
+#: code:addons/survey/survey.py:719
 #, python-format
 msgid "This is not a number"
 msgstr "Это не число"
@@ -1928,7 +1937,7 @@ msgid "This message will be displayed when survey is completed"
 msgstr "Это сообщения появится, когда соцопрос будет завершен"
 
 #. module: survey
-#: code:addons/survey/survey.py:644
+#: code:addons/survey/survey.py:646
 #: model:survey.question,constr_error_msg:survey.feedback_1_1
 #: model:survey.question,constr_error_msg:survey.feedback_1_2
 #: model:survey.question,constr_error_msg:survey.feedback_2_1
@@ -2129,8 +2138,8 @@ msgid "Votes"
 msgstr "Голоса"
 
 #. module: survey
-#: code:addons/survey/survey.py:442 code:addons/survey/survey.py:896
-#: code:addons/survey/survey.py:1028
+#: code:addons/survey/survey.py:444 code:addons/survey/survey.py:898
+#: code:addons/survey/survey.py:1030
 #: code:addons/survey/wizard/survey_email_compose_message.py:95
 #: code:addons/survey/wizard/survey_email_compose_message.py:188
 #: code:addons/survey/wizard/survey_email_compose_message.py:213
@@ -2212,20 +2221,20 @@ msgstr ""
 "активирована)."
 
 #. module: survey
-#: code:addons/survey/survey.py:896 code:addons/survey/survey.py:1028
+#: code:addons/survey/survey.py:898 code:addons/survey/survey.py:1030
 #, python-format
 msgid "You cannot duplicate this             element!"
 msgstr "Вы не можете дублировать этот             элемент!"
 
 #. module: survey
-#: code:addons/survey/survey.py:437
+#: code:addons/survey/survey.py:439
 #, python-format
 msgid "You cannot send an invitation for a survey that has no questions."
 msgstr ""
 "Вы не можете отправить приглашение на соцопрос, в котором нет вопросов."
 
 #. module: survey
-#: code:addons/survey/survey.py:443
+#: code:addons/survey/survey.py:445
 #, python-format
 msgid "You cannot send invitations for closed surveys."
 msgstr "Вы не можете отправлять приглашения на закрытые соцопросы."
@@ -2244,6 +2253,16 @@ msgstr "Ваши ответы, вероятно, не были записаны.
 #: view:website:survey.auth_required
 msgid "log in"
 msgstr "вход"
+
+#. module: survey
+#: view:website:survey.page
+msgid "on"
+msgstr ""
+
+#. module: survey
+#: view:survey.mail.compose.message:survey.survey_email_compose_message
+msgid "or"
+msgstr ""
 
 #. module: survey
 #: view:website:survey.sfinished

@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-18 21:21+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-23 22:00+0700\n"
 "Last-Translator: user2 <user2@starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/account_bank_statement_extensions/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"account_bank_statement_extensions/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 06:49+0000\n"
 
 #. module: account_bank_statement_extensions
@@ -29,8 +29,7 @@ msgstr "Количество"
 #. module: account_bank_statement_extensions
 #: view:cancel.statement.line:account_bank_statement_extensions.view_cancel_statement_line
 msgid "Are you sure you want to cancel the selected Bank Statement lines ?"
-msgstr ""
-"Вы уверены, что хотите отменить выбранные позиции банковской выписки ?"
+msgstr "Вы уверены, что хотите отменить выбранные позиции банковской выписки ?"
 
 #. module: account_bank_statement_extensions
 #: view:confirm.statement.line:account_bank_statement_extensions.view_confirm_statement_line
@@ -273,8 +272,7 @@ msgstr "Группировать по"
 
 #. module: account_bank_statement_extensions
 #: field:account.bank.statement.line.global,id:0
-#: field:cancel.statement.line,id:0
-#: field:confirm.statement.line,id:0
+#: field:cancel.statement.line,id:0 field:confirm.statement.line,id:0
 #: field:report.account_bank_statement_extensions.report_bankstatementbalance,id:0
 msgid "ID"
 msgstr "ID"
@@ -394,3 +392,8 @@ msgstr "Внимание!"
 #: model:ir.actions.act_window,help:account_bank_statement_extensions.action_cancel_statement_line
 msgid "cancel selected statement lines."
 msgstr "отменить выбранные позиции выписки"
+
+#. module: account_bank_statement_extensions
+#: view:confirm.statement.line:account_bank_statement_extensions.view_confirm_statement_line
+msgid "or"
+msgstr ""

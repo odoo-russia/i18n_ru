@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-22 23:56+0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 06:08+0700\n"
 "Last-Translator: \n"
 "Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
 "report/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-20 06:28+0000\n"
 
 #. module: report
@@ -147,7 +147,7 @@ msgid "B9  23  33 x 62 mm"
 msgstr "B9 23 33 x 62 мм"
 
 #. module: report
-#: code:addons/report/models/report.py:279
+#: code:addons/report/models/report.py:295
 #, python-format
 msgid "Bad Report Reference"
 msgstr "Неверная ссылка на отчет"
@@ -348,16 +348,16 @@ msgstr "Портрет"
 
 #. module: report
 #. openerp-web
-#: code:addons/report/static/src/js/qwebactionmanager.js:62
-#: code:addons/report/static/src/js/qwebactionmanager.js:70
-#: code:addons/report/static/src/js/qwebactionmanager.js:77
+#: code:addons/report/static/src/js/qwebactionmanager.js:67
+#: code:addons/report/static/src/js/qwebactionmanager.js:75
+#: code:addons/report/static/src/js/qwebactionmanager.js:82
 #: model:ir.model,name:report.model_report
 #, python-format
 msgid "Report"
 msgstr "Отчет"
 
 #. module: report
-#: code:addons/report/models/report.py:421
+#: code:addons/report/models/report.py:449
 #, python-format
 msgid "Report (PDF)"
 msgstr "Отчет (PDF)"
@@ -390,14 +390,7 @@ msgid "Tabloid 29 279.4 x 431.8 mm"
 msgstr "Tabloid 29 279,4 x 431,8 мм"
 
 #. module: report
-#: code:addons/report/models/report.py:128
-#, python-format
-msgid "The preferred way to edit a report is to use the HTML Editor"
-msgstr ""
-"Предпочтительный способ редактирования отчета - использование HTML-редактора"
-
-#. module: report
-#: code:addons/report/models/report.py:280
+#: code:addons/report/models/report.py:296
 #, python-format
 msgid "This report is not loaded into the database: %s."
 msgstr "Этот отчет не загружен в базу данных: %s."
@@ -409,7 +402,7 @@ msgstr "Верхнее поле (мм)"
 
 #. module: report
 #. openerp-web
-#: code:addons/report/static/src/js/qwebactionmanager.js:62
+#: code:addons/report/static/src/js/qwebactionmanager.js:67
 #, python-format
 msgid ""
 "Unable to find Wkhtmltopdf on this \n"
@@ -428,14 +421,14 @@ msgid "Website:"
 msgstr "Веб-сайт:"
 
 #. module: report
-#: code:addons/report/models/report.py:422
+#: code:addons/report/models/report.py:450
 #, python-format
 msgid "Wkhtmltopdf failed (error code: %s). Message: %s"
 msgstr "Wkhtmltopdf не было выполнено (код ошибки: %s). Сообщение: %s"
 
 #. module: report
 #. openerp-web
-#: code:addons/report/static/src/js/qwebactionmanager.js:70
+#: code:addons/report/static/src/js/qwebactionmanager.js:75
 #, python-format
 msgid ""
 "You need to start OpenERP with at least two \n"
@@ -446,7 +439,7 @@ msgstr ""
 
 #. module: report
 #. openerp-web
-#: code:addons/report/static/src/js/qwebactionmanager.js:77
+#: code:addons/report/static/src/js/qwebactionmanager.js:82
 #, python-format
 msgid ""
 "You should upgrade your version of\n"
@@ -482,3 +475,8 @@ msgstr "data_report_margin_top если data_report_margin_top иначе нет
 #: view:website:report.layout
 msgid "report.layout"
 msgstr "report.layout"
+
+#~ msgid "The preferred way to edit a report is to use the HTML Editor"
+#~ msgstr ""
+#~ "Предпочтительный способ редактирования отчета - использование HTML-"
+#~ "редактора"

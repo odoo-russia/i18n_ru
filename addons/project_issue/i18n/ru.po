@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:08+0000\n"
-"PO-Revision-Date: 2014-10-20 22:29+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-04-24 05:34+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/project_issue/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"project_issue/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-15 07:42+0000\n"
 
 #. module: project_issue
@@ -122,8 +122,7 @@ msgstr ""
 "быть выдвинут на следующий этап"
 
 #. module: project_issue
-#: field:project.issue,active:0
-#: field:project.issue.version,active:0
+#: field:project.issue,active:0 field:project.issue.version,active:0
 msgid "Active"
 msgstr "Активный"
 
@@ -152,6 +151,7 @@ msgid "Assigned"
 msgstr "Назначен"
 
 #. module: project_issue
+#: view:project.issue:project_issue.view_project_issue_filter
 #: field:project.issue,user_id:0
 #: view:project.issue.report:project_issue.view_project_issue_report_filter
 #: field:project.issue.report,user_id:0
@@ -194,8 +194,7 @@ msgid "Category:"
 msgstr "Категория:"
 
 #. module: project_issue
-#: field:project.issue,channel:0
-#: field:project.issue.report,channel:0
+#: field:project.issue,channel:0 field:project.issue.report,channel:0
 msgid "Channel"
 msgstr "Канал"
 
@@ -225,6 +224,7 @@ msgid "Communication channel."
 msgstr "Канал общения"
 
 #. module: project_issue
+#: view:project.issue:project_issue.view_project_issue_filter
 #: field:project.issue,company_id:0
 #: view:project.issue.report:project_issue.view_project_issue_report_filter
 #: field:project.issue.report,company_id:0
@@ -242,18 +242,22 @@ msgid "Configure"
 msgstr "Настройка"
 
 #. module: project_issue
-#: view:project.issue:project_issue.view_project_issue_filter
-#: field:project.issue,partner_id:0
-#: view:project.issue.report:project_issue.view_project_issue_report_filter
-#: field:project.issue.report,partner_id:0
+#: field:project.issue,partner_id:0 field:project.issue.report,partner_id:0
 msgid "Contact"
 msgstr "Контакт"
 
 #. module: project_issue
+#: view:project.issue:project_issue.view_project_issue_filter
 #: view:project.issue.report:project_issue.view_project_issue_report_filter
 #: field:project.issue.report,create_date:0
 msgid "Create Date"
 msgstr "Дата создания"
+
+#. module: project_issue
+#: view:project.issue:project_issue.view_project_issue_filter
+#: view:project.issue.report:project_issue.view_project_issue_report_filter
+msgid "Create Day"
+msgstr ""
 
 #. module: project_issue
 #: field:project.config.settings,fetchmail_issue:0
@@ -261,8 +265,7 @@ msgid "Create issues from an incoming email account "
 msgstr "Создавать вопросы из входящей почты "
 
 #. module: project_issue
-#: field:project.issue,create_uid:0
-#: field:project.issue.version,create_uid:0
+#: field:project.issue,create_uid:0 field:project.issue.version,create_uid:0
 msgid "Created by"
 msgstr "Создано"
 
@@ -275,11 +278,6 @@ msgstr "Создан"
 #: field:project.issue,create_date:0
 msgid "Creation Date"
 msgstr "Дата создания"
-
-#. module: project_issue
-#: view:project.issue:project_issue.view_project_issue_filter
-msgid "Creation Month"
-msgstr "Месяц создания"
 
 #. module: project_issue
 #: code:addons/project_issue/project_issue.py:424
@@ -342,6 +340,11 @@ msgstr "Последний срок"
 #: model:project.category,name:project_issue.project_issue_category_03
 msgid "Deadly bug"
 msgstr "Критическая ошибка"
+
+#. module: project_issue
+#: model:ir.filters,name:project_issue.filter_issue_report_delay
+msgid "Delay"
+msgstr ""
 
 #. module: project_issue
 #: view:project.issue:project_issue.project_issue_kanban_view
@@ -425,8 +428,7 @@ msgstr ""
 "непосредственно в HTML формате для того, чтобы вставить в виды kanban."
 
 #. module: project_issue
-#: field:project.issue,id:0
-#: field:project.issue.report,id:0
+#: field:project.issue,id:0 field:project.issue.report,id:0
 #: field:project.issue.version,id:0
 msgid "ID"
 msgstr "ID"
@@ -560,14 +562,12 @@ msgstr "Дата последнего сообщения"
 
 #. module: project_issue
 #: field:project.issue,date_last_stage_update:0
-#: view:project.issue.report:project_issue.view_project_issue_report_filter
 #: field:project.issue.report,date_last_stage_update:0
 msgid "Last Stage Update"
 msgstr "Обновление последнего этапа"
 
 #. module: project_issue
-#: field:project.issue,write_uid:0
-#: field:project.issue.version,write_uid:0
+#: field:project.issue,write_uid:0 field:project.issue.version,write_uid:0
 msgid "Last Updated by"
 msgstr "Последний раз обновлено"
 
@@ -599,13 +599,9 @@ msgstr "Сообщения и журнал обращений"
 
 #. module: project_issue
 #: view:project.issue:project_issue.view_project_issue_filter
+#: view:project.issue.report:project_issue.view_project_issue_report_filter
 msgid "My Issues"
 msgstr "Мои инциденты"
-
-#. module: project_issue
-#: view:project.issue.report:project_issue.view_project_issue_report_filter
-msgid "My Task"
-msgstr "Моя задача"
 
 #. module: project_issue
 #: view:project.issue:project_issue.view_project_issue_filter
@@ -630,8 +626,7 @@ msgid "No Subject"
 msgstr "Предмет отсутствует"
 
 #. module: project_issue
-#: selection:project.issue,kanban_state:0
-#: selection:project.issue,priority:0
+#: selection:project.issue,kanban_state:0 selection:project.issue,priority:0
 #: selection:project.issue.report,priority:0
 msgid "Normal"
 msgstr "Обычный"
@@ -659,6 +654,7 @@ msgstr "Партнер"
 #. module: project_issue
 #: view:project.issue:project_issue.project_feature_tree_view
 #: view:project.issue:project_issue.project_issue_tree_view
+#: view:project.issue:project_issue.view_project_issue_filter
 #: field:project.issue,priority:0
 #: view:project.issue.report:project_issue.view_project_issue_report_filter
 #: field:project.issue.report,priority:0
@@ -696,6 +692,11 @@ msgid "Project Issue"
 msgstr "Проблема проекта"
 
 #. module: project_issue
+#: view:project.issue:project_issue.project_issue_graph_view
+msgid "Project Issues"
+msgstr ""
+
+#. module: project_issue
 #: view:project.issue:project_issue.project_issue_kanban_view
 msgid "Project:"
 msgstr "Проект:"
@@ -706,12 +707,11 @@ msgid "Ready for next stage"
 msgstr "Готово к следующей стадии"
 
 #. module: project_issue
-#: view:project.issue:project_issue.view_project_issue_filter
-msgid "Responsible"
-msgstr "Ответственный"
+#: field:project.issue.report,reviewer_id:0
+msgid "Reviewer"
+msgstr ""
 
 #. module: project_issue
-#: view:project.issue.report:project_issue.view_project_issue_report_filter
 #: field:project.issue.report,section_id:0
 msgid "Sale Team"
 msgstr "Отдел продаж"
@@ -776,6 +776,7 @@ msgid "Tags"
 msgstr "Теги"
 
 #. module: project_issue
+#: view:project.issue:project_issue.view_project_issue_filter
 #: field:project.issue,task_id:0
 #: view:project.issue.report:project_issue.view_project_issue_report_filter
 #: field:project.issue.report,task_id:0
@@ -834,9 +835,7 @@ msgid "User Email"
 msgstr "Электронный адрес пользователя"
 
 #. module: project_issue
-#: field:project.issue,version_id:0
-#: view:project.issue.report:project_issue.view_project_issue_report_filter
-#: field:project.issue.report,version_id:0
+#: field:project.issue,version_id:0 field:project.issue.report,version_id:0
 msgid "Version"
 msgstr "Версия"
 
@@ -907,3 +906,12 @@ msgstr "{'on_change': 'on_change_use_tasks_or_issues(use_tasks, use_issues)'}"
 #: view:project.issue:project_issue.project_issue_form_view
 msgid "⇒ Escalate"
 msgstr "⇒ Передать на уровень выше"
+
+#~ msgid "Creation Month"
+#~ msgstr "Месяц создания"
+
+#~ msgid "My Task"
+#~ msgstr "Моя задача"
+
+#~ msgid "Responsible"
+#~ msgstr "Ответственный"

@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openobject-addons\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-14 13:09+0000\n"
-"PO-Revision-Date: 2014-10-19 15:38+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:08+0000\n"
+"PO-Revision-Date: 2015-04-24 02:58+0700\n"
 "Last-Translator: user3 <user3@translate.starlight-biz.com>\n"
-"Language-Team: Russian <http://translate.starlight-"
-"biz.com//projects/odoo/im_livechat/ru/>\n"
+"Language-Team: Russian <http://translate.starlight-biz.com//projects/odoo/"
+"im_livechat/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Launchpad-Export-Date: 2014-08-26 08:40+0000\n"
 
 #. module: im_livechat
@@ -114,13 +114,6 @@ msgstr ""
 "            "
 
 #. module: im_livechat
-#. openerp-web
-#: code:addons/im_livechat/static/src/js/im_livechat.js:61
-#, python-format
-msgid "Anonymous"
-msgstr "Анонимный"
-
-#. module: im_livechat
 #: field:im_chat.session,anonymous_name:0
 msgid "Anonymous Name"
 msgstr "Анонимное имя"
@@ -152,7 +145,7 @@ msgstr "Место входа чата"
 
 #. module: im_livechat
 #. openerp-web
-#: code:addons/im_livechat/static/src/js/im_livechat.js:58
+#: code:addons/im_livechat/static/src/js/im_livechat.js:85
 #, python-format
 msgid "Chat with one of our collaborators"
 msgstr "Чат с одним из ваших сотрудников"
@@ -208,7 +201,7 @@ msgstr "История"
 
 #. module: im_livechat
 #. openerp-web
-#: code:addons/im_livechat/static/src/js/im_livechat.js:60
+#: code:addons/im_livechat/static/src/js/im_livechat.js:87
 #, python-format
 msgid "How may I help you?"
 msgstr "Как я могу Вам помочь?"
@@ -301,7 +294,7 @@ msgstr "Мои сессии"
 
 #. module: im_livechat
 #. openerp-web
-#: code:addons/im_livechat/static/src/js/im_livechat.js:119
+#: code:addons/im_livechat/static/src/js/im_livechat.js:137
 #, python-format
 msgid ""
 "None of our collaborators seems to be available, please try again later."
@@ -423,9 +416,16 @@ msgid "Users"
 msgstr "Пользователи"
 
 #. module: im_livechat
+#. openerp-web
+#: code:addons/im_livechat/static/src/js/im_livechat.js:88
+#, python-format
+msgid "Visitor"
+msgstr "Посетитель"
+
+#. module: im_livechat
 #: field:im_livechat.channel,web_page:0
 msgid "Web Page"
-msgstr "Вэб страница"
+msgstr "Веб страница"
 
 #. module: im_livechat
 #: field:im_livechat.channel,default_message:0
@@ -448,3 +448,6 @@ msgid "or copy this url and send it by email to your customers or suppliers:"
 msgstr ""
 "или скопируйте этот адрес и отправить его по электронной почте своим "
 "клиентам или поставщикам:"
+
+#~ msgid "Anonymous"
+#~ msgstr "Анонимный"
